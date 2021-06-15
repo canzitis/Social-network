@@ -1,0 +1,13 @@
+.status{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    color:rgb(255, 51, 51);
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.spanStatus :hover{
+    cursor: pointer;
+}

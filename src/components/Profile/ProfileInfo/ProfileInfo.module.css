@@ -1,0 +1,20 @@
+.likeImg img{
+    width: 30px;
+    height: 30px;
+}
+
+.content h4 {
+    margin: 0px;
+}
+
+.content p{
+    margin-bottom: 10px;
+    margin-top:  0px;
+}
+
+.endLine{
+    margin: 30px 0px 30px 0px ;
+    border: none;
+    background-color: black;
+    height: 2px; 
+}

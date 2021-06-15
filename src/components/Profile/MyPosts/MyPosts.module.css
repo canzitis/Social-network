@@ -1,0 +1,7 @@
+.buttonAddPost{
+    margin-bottom: 10px;
+}
+.buttonAddPost:hover{
+    cursor:pointer;
+    background-color: rgb(91, 192, 65);
+}

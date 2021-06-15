@@ -1,0 +1,32 @@
+.dialogs{
+    display:grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems{
+    padding: 10px;
+}
+
+.messages{
+    padding: 10px;
+}
+
+.dialog a{ 
+    text-decoration: none;
+    
+    font-size: 20px;
+    color:white;
+}
+
+.dialog a:hover{
+    text-decoration: underline;
+}
+
+.dialogsItem a.activeLink{
+    color: gold
+}
+
+.buttonAddMessages{
+    width: 100px;
+    height: 20px;
+}

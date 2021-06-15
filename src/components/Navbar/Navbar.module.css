@@ -1,0 +1,22 @@
+.nav{
+    grid-area: n;
+
+    height: 100%;
+    padding-left: 10px;
+    background-color: rgb(33, 132, 197);
+}
+
+.nav a {
+    font-size: 20px;
+    text-decoration: none;
+  
+    color:white;
+}
+
+.nav a:hover{
+  text-decoration: underline;
+}
+
+.item a.activeLink{
+  color: gold;
+}

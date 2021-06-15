@@ -1,0 +1,26 @@
+.header{
+    grid-area: h;
+  
+    background-color: green;
+  }
+
+  .header img{
+    width: 60px;
+    padding: 5px;
+    
+  }
+
+  .login{
+    float: right;
+
+    font-size: 20px;
+
+    text-align: right;
+    
+    padding-right: 10px;
+   }
+
+   .login a{
+     color: white;
+     text-decoration: none ;
+   }
