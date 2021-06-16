@@ -5,7 +5,7 @@ import {
 const ADD_POST = "ADD-POST";
 const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 const SET_PROFILE = "SET-PROFILE";
-const GET_STATUS = "GET-STATUS";
+const SET_STATUS = "SET-STATUS";
 
 let initialState = {
   posts: [{
@@ -49,11 +49,12 @@ const profileReducer = (state = initialState, action) => {
         ...state,
         userProfile: action.profile
       }
-      case GET_STATUS:
+      case SET_STATUS:
         return {
           ...state,
           status: action.status
         }
+
         default:
           return state;
   }
@@ -73,6 +74,7 @@ export const updateNewPostTextActionCreator = (text) => {
 };
 
 export const setProfile = (profile) => {
+
   return {
     type: SET_PROFILE,
     profile
@@ -81,7 +83,7 @@ export const setProfile = (profile) => {
 
 export const setStatus = (status) => {
   return {
-    type: GET_STATUS,
+    type: SET_STATUS,
     status: status
   };
 };
@@ -108,7 +110,7 @@ export const getStatus = (userid) => {
 export const updateStatus = (status) => {
   return (dispatch) => {
     profileAPI.updateStatus(status).then((response) => {
-      if (response.data.resultCode === 0) {
+      if (response.resultCode === 0) {
         dispatch(setStatus(status));
       }
 

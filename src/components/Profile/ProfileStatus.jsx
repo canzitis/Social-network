@@ -40,7 +40,11 @@ class ProfileStatus extends React.Component {
             </div>
           ) : (
             <div className={s.spanStatus}>
-              <span onClick={this.activatedEditMode}>{this.props.status}</span>
+              <span onClick={this.activatedEditMode}>
+                {!this.props.status
+                  ? "Здесь должен быть статус,но его не добавил :("
+                  : this.props.status}
+              </span>
             </div>
           )}
         </div>
