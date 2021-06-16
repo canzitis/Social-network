@@ -4,7 +4,8 @@ import {
 
 const ADD_POST = "ADD-POST";
 const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
-const SET_PROFILE = "SET-PROFILE"
+const SET_PROFILE = "SET-PROFILE";
+const GET_STATUS = "GET-STATUS";
 
 let initialState = {
   posts: [{
@@ -19,7 +20,8 @@ let initialState = {
     },
   ],
   newPostsText: "Hello! ",
-  userProfile: null
+  userProfile: null,
+  status: ''
 };
 
 const profileReducer = (state = initialState, action) => {
@@ -47,9 +49,13 @@ const profileReducer = (state = initialState, action) => {
         ...state,
         userProfile: action.profile
       }
-
-      default:
-        return state;
+      case GET_STATUS:
+        return {
+          ...state,
+          status: action.status
+        }
+        default:
+          return state;
   }
 };
 
@@ -73,6 +79,13 @@ export const setProfile = (profile) => {
   };
 };
 
+export const setStatus = (status) => {
+  return {
+    type: GET_STATUS,
+    status: status
+  };
+};
+
 export const getProfile = (id) => {
   return (dispatch) => {
     if (!id) {
@@ -80,6 +93,25 @@ export const getProfile = (id) => {
     }
     profileAPI.getProfile(id).then((data) => {
       dispatch(setProfile(data));
+    });
+  }
+}
+
+export const getStatus = (userid) => {
+  return (dispatch) => {
+    profileAPI.getStatus(userid).then((data) => {
+      dispatch(setStatus(data));
+    });
+  }
+}
+
+export const updateStatus = (status) => {
+  return (dispatch) => {
+    profileAPI.updateStatus(status).then((response) => {
+      if (response.data.resultCode === 0) {
+        dispatch(setStatus(status));
+      }
+
     });
   }
 }

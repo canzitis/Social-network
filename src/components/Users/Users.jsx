@@ -34,11 +34,12 @@ const Users = (props) => {
         {props.bootResponse ? <img src={loadingGIF} alt="" /> : null}
       </div>
       {props.users.map((u) => (
-        <div>
+        <div className={s.usersBorder}>
           <NavLink to={"/profile/" + u.id}>
             <img src={u.photos.small ? u.photos.small : baseImgUsers} alt="" />
           </NavLink>
           <h3>{u.name}</h3>
+          <h4>Статус: {u.status ? u.status : "-"}</h4>
           <div className={s.btnFollowed}>
             {u.followed ? (
               <button

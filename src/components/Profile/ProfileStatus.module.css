@@ -1,3 +1,13 @@
+.statusH3{
+    margin: 0px;
+}
+.statusBorder{
+    width: 1250px;
+    height: 90px;
+    border-bottom: 1.5px solid black;
+    padding: 5px;
+}
+
 .status{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
@@ -5,9 +15,10 @@
 
     margin-top: 10px;
     margin-bottom: 30px;
-
 }
 
 .spanStatus :hover{
     cursor: pointer;
 }
+
+

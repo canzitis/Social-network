@@ -2,10 +2,12 @@
   width: 70px;
   height: 20px;
   margin-bottom: 40px;
-  margin-left:15px
-
+  margin-left:15px;
+ 
 }
-
+.usersBorder{
+  border-bottom: solid 1px black;
+}
 .users img{
   width: 90px;
   height: 90px;
@@ -13,9 +15,15 @@
 }
 
 .users h3{
-  padding: 0;
-  margin-top: 0;
+  padding: 0px;
+  margin: 5px;
+}
+
+.users h4{
+  margin: 0px;
+  font-weight: 400;
   margin-bottom: 10px;
+  margin-left: 5px;
 }
 
 .activBtnPages button{

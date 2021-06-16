@@ -22,7 +22,7 @@ const ProfileInfo = (props) => {
         }
         alt=""
       />
-      <ProfileStatus status={"HI my frends!!"} />
+      <ProfileStatus status={props.status} updateStatus={props.updateStatus} />
       <h4>about Me:</h4> <p>{props.userProfile.aboutMe}</p>
       <h4>instagram:</h4>
       <a href={props.userProfile.contacts.instagram}>
