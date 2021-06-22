@@ -5,3 +5,8 @@
     cursor:pointer;
     background-color: rgb(91, 192, 65);
 }
+
+.profileInput{
+    width: 500px;
+    height: 100px;
+}
