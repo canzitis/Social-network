@@ -37,3 +37,9 @@
     
     margin-top: 100px;
 }
+
+
+.errorsText{
+    color:red;
+    font-size: 18px;
+}

@@ -10,3 +10,8 @@
     width: 500px;
     height: 100px;
 }
+
+.errorsText{
+    color: red;
+    text-align: 20px;
+}

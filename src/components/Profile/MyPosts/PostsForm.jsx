@@ -1,8 +1,8 @@
 import React from "react";
 import { Formik } from "formik";
-import s from "./Dialogs.module.css";
+import s from "./MyPosts.module.css";
 
-const validateTextDialog = (values) => {
+const validateTextPost = (values) => {
   const errors = {};
   if (!values.text || values.text.length > 200) {
     errors.text = "Длина не может быть меньше 1 символа или больше 200";
@@ -10,14 +10,14 @@ const validateTextDialog = (values) => {
   return errors;
 };
 
-const DialogForm = (props) => {
+const PostForm = (props) => {
   const onAddPostValue = (value) => {
-    props.addMessage(value.text);
+    props.addPost(value.text);
   };
   return (
     <Formik
       initialValues={{ text: "" }}
-      validate={validateTextDialog}
+      validate={validateTextPost}
       onSubmit={onAddPostValue}
     >
       {({
@@ -30,7 +30,7 @@ const DialogForm = (props) => {
       }) => (
         <form onSubmit={handleSubmit}>
           <input
-            className={s.dialogInput}
+            className={s.profileInput}
             type="text"
             name="text"
             onChange={handleChange}
@@ -40,11 +40,11 @@ const DialogForm = (props) => {
 
           <div>
             <button type="submit" className={s.buttonAddPost}>
-              Add Message
+              Add Post
             </button>
-            <div className={s.errorsText}>
-              {errors.text && touched.text && errors.text}
-            </div>
+          </div>
+          <div className={s.errorsText}>
+            {errors.text && touched.text && errors.text}
           </div>
         </form>
       )}
@@ -52,4 +52,4 @@ const DialogForm = (props) => {
   );
 };
 
-export default DialogForm;
+export default PostForm;

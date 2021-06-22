@@ -2,6 +2,7 @@ import { Formik } from "formik";
 import React from "react";
 
 const validateEmail = (values) => {
+  debugger;
   const errors = {};
   if (!values.email) {
     errors.email = "Required";

@@ -1,7 +1,7 @@
 import React from "react";
 import Post from "./Posts/Post";
 import s from "./MyPosts.module.css";
-import DialogForm from "./DialogForm";
+import PostsForm from "./PostsForm";
 
 const MyPosts = (props) => {
   const postsElements = props.posts.map((p) => (
@@ -11,7 +11,7 @@ const MyPosts = (props) => {
   return (
     <div>
       <div>My posts</div>
-      <DialogForm addPost={props.addPost} />
+      <PostsForm addPost={props.addPost} />
       <div className={s.posts}>{postsElements}</div>
     </div>
   );
