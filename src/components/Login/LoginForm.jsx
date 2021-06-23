@@ -2,7 +2,6 @@ import { Formik } from "formik";
 import React from "react";
 
 const validateEmail = (values) => {
-  debugger;
   const errors = {};
   if (!values.email) {
     errors.email = "Required";
@@ -12,13 +11,11 @@ const validateEmail = (values) => {
   return errors;
 };
 
-const addValuesLogin = (values) => {
-  setTimeout(() => {
-    alert(values.email);
-  }, 400);
-};
+const LoginForm = (props) => {
+  const addValuesLogin = (values) => {
+    props.login(values.email, values.password, true);
+  };
 
-const LoginForm = () => {
   return (
     <Formik
       initialValues={{ email: "", password: "" }}
