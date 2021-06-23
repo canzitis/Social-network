@@ -3,7 +3,6 @@ import {
 } from "../api/api";
 
 const ADD_POST = "ADD-POST";
-const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 const SET_PROFILE = "SET-PROFILE";
 const SET_STATUS = "SET-STATUS";
 
