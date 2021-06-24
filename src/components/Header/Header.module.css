@@ -7,7 +7,6 @@
   .header img{
     width: 60px;
     padding: 5px;
-    
   }
 
   .login{
@@ -23,4 +22,30 @@
    .login a{
      color: white;
      text-decoration: none ;
+   }
+
+   .loginInfoUser{
+     border: solid 1px black;
+     padding: 5px;
+     
+   }
+
+   .buttonExitLogin{
+     width: 70px;
+     height: 20px;
+     color:red;
+     font-size: 15px;
+      margin-left: 10px;
+      font-weight: 540;
+   }
+   
+   .buttonLogin{
+    width: 60px;
+     height: 23px;
+     background-color: blue
+   }
+
+   .buttonExitLogin:hover{
+     background-color:red;
+     color:black;
    }

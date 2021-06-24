@@ -4,24 +4,19 @@ import s from "./ProfileInfo.module.css";
 import likeIMG from "../../img/likeIMG.jpg";
 import dislike from "../../img/dislikeIMG.png";
 import ProfileStatus from "../ProfileStatus";
+import baseImgUsers from "../../img/baseImgUsers.png";
 
 const ProfileInfo = (props) => {
-  const baseImg =
-    "https://academic-fitness.ru/wp-content/uploads/2017/09/user.png";
-
   if (!props.userProfile) {
     return <Preloader />;
   }
   return (
     <div className={s.content}>
-      <img
-        src={
-          !props.userProfile.photos.large
-            ? { baseImg }
-            : props.userProfile.photos.large
-        }
-        alt=""
-      />
+      {!props.userProfile.photos.large ? (
+        <img className={s.baseImgUsers} src={baseImgUsers} alt="" />
+      ) : (
+        <img src={props.userProfile.photos.large} alt="" />
+      )}
       <ProfileStatus status={props.status} updateStatus={props.updateStatus} />
       <h4>about Me:</h4> <p>{props.userProfile.aboutMe}</p>
       <h4>instagram:</h4>

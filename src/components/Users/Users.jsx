@@ -2,11 +2,9 @@ import React from "react";
 import s from "./Users.module.css";
 import loadingGIF from "../img/loading-gif2.gif";
 import { NavLink } from "react-router-dom";
+import baseImgUsers from "../img/baseImgUsers.png";
 
 const Users = (props) => {
-  const baseImgUsers =
-    "https://academic-fitness.ru/wp-content/uploads/2017/09/user.png";
-
   let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
   let pages = [];
   for (let i = 1; i <= pagesCount; i++) {

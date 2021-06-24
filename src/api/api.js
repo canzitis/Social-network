@@ -26,7 +26,6 @@ export const authAPI = {
                 rememberMe
             })
             .then(response => {
-                debugger;
                 return response.data
             })
     },

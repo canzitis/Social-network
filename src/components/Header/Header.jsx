@@ -3,6 +3,14 @@ import { NavLink } from "react-router-dom";
 import s from "./Header.module.css";
 
 const Header = (props) => {
+  debugger;
+  const clikLogoutBtn = () => {
+    props.logout();
+    setTimeout(() => {
+      alert("До встречи!");
+    }, 700);
+  };
+
   return (
     <header className={s.header}>
       <img
@@ -11,9 +19,16 @@ const Header = (props) => {
       />
       <div className={s.login}>
         {props.isAuth ? (
-          <div>{props.login}</div>
+          <div className={s.loginInfoUser}>
+            {props.login}
+            <button onClick={clikLogoutBtn} className={s.buttonExitLogin}>
+              Log out
+            </button>
+          </div>
         ) : (
-          <NavLink to={"/login"}>Login</NavLink>
+          <button onClick={props.login} className={s.buttonLogin}>
+            <NavLink to={"/login"}>Login</NavLink>
+          </button>
         )}
       </div>
     </header>
