@@ -17,7 +17,7 @@ const ProfileInfo = (props) => {
       ) : (
         <img src={props.userProfile.photos.large} alt="" />
       )}
-      <ProfileStatus status={props.status} updateStatus={props.updateStatus} />
+      <ProfileStatus {...props} />
       <h4>about Me:</h4> <p>{props.userProfile.aboutMe}</p>
       <h4>instagram:</h4>
       <a href={props.userProfile.contacts.instagram}>
