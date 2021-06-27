@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import { Route } from "react-router-dom";
 import "./App.css";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
@@ -7,20 +8,27 @@ import Login from "./components/Login/login";
 import Navbar from "./components/Navbar/Navbar";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import UsersContainer from "./components/Users/UsersContainer";
+import { initialize } from "./Redux/app-reducer";
 
-const App = () => {
-  return (
-    <div className="app-wrapper">
-      <HeaderContainer />
-      <Navbar />
-      <div className="app-wrapper-content">
-        <Route path="/profile/:id?" render={() => <ProfileContainer />} />
-        <Route path="/dialogs" render={() => <DialogsContainer />} />
-        <Route path="/users" render={() => <UsersContainer />} />
-        <Route path="/login" render={() => <Login />} />
+
+class App extends React.Component {
+  componentDidMount() {
+    this.props.getAuth();
+  }
+  render() {
+    return (
+      <div className="app-wrapper">
+        <HeaderContainer />
+        <Navbar />
+        <div className="app-wrapper-content">
+          <Route path="/profile/:id?" render={() => <ProfileContainer />} />
+          <Route path="/dialogs" render={() => <DialogsContainer />} />
+          <Route path="/users" render={() => <UsersContainer />} />
+          <Route path="/login" render={() => <Login />} />
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
-export default App;
+export default connect(null, { initialize })(App);
