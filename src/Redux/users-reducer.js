@@ -130,11 +130,11 @@ export const toogleFollowingProgress = (isFetching, userId) => {
   }
 };
 
-export const getUsers = (currentPage, pageSize, pageNumber) => {
+export const getUsers = (currentPage, pageSize) => {
   return (dispatch) => {
 
     dispatch(setBootResponse(true));
-    // dispatch(setCurrentPage(pageNumber))
+    dispatch(setCurrentPage(currentPage))
     dispatch(setUsers([
       /* ОЧИЩАЕМ ПОЛЬЗОВАТЕЛЕЙ ПОКА НЕ ЗАГРУЗИТСЯ ОТВЕТ С СЕРВА */
     ]));

@@ -3,6 +3,15 @@ import { follow, unfollow, getUsers } from "../../Redux/users-reducer";
 import React from "react";
 import Users from "./Users";
 import { compose } from "redux";
+import {
+  getBootResponse,
+  getCurrentPage,
+  getFollowingProgress,
+  getIsFetching,
+  getPageSize,
+  getTotalUsersCount,
+  getUsersPage,
+} from "../../Redux/Selectors/users-selector";
 
 class UsersAPIContainer extends React.Component {
   componentDidMount() {
@@ -32,7 +41,7 @@ class UsersAPIContainer extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
+/* const mapStateToProps = (state) => {
   return {
     users: state.usersPage.users,
     currentPage: state.usersPage.currentPage,
@@ -41,6 +50,18 @@ const mapStateToProps = (state) => {
     bootResponse: state.usersPage.bootResponse,
     isFetching: state.usersPage.isFetching,
     followingProgress: state.usersPage.followingProgress,
+  };
+}; */
+
+const mapStateToProps = (state) => {
+  return {
+    users: getUsersPage(state),
+    currentPage: getCurrentPage(state),
+    pageSize: getPageSize(state),
+    totalUsersCount: getTotalUsersCount(state),
+    bootResponse: getBootResponse(state),
+    isFetching: getIsFetching(state),
+    followingProgress: getFollowingProgress(state)
   };
 };
 
