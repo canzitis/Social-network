@@ -24,14 +24,19 @@ const appReducer = (state = initialState, action) => {
 
 export const initializetSuccess = () => {
   return {
-    tupe: SET_INITIALIZET,
+    type: SET_INITIALIZET,
   };
 };
 
+
+
 export const initialize = () => {
+
   return (dispatch) => {
-    dispatch(getAuth())
-    dispatch(initializetSuccess())
+    const promise = dispatch(getAuth());
+    promise.then(() => {
+      dispatch(initializetSuccess())
+    })
   }
 }
 

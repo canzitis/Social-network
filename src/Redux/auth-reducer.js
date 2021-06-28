@@ -42,7 +42,7 @@ export const setAuthUserData = (id, email, login, isAuth) => {
 
 export const getAuth = () => {
   return (dispatch) => {
-    authAPI.getAuth().then((data) => {
+    return authAPI.getAuth().then((data) => {
       if (data.resultCode === 0) {
         const {
           id,

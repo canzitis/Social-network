@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Route } from "react-router-dom";
 import "./App.css";
+import Preloader from "./components/common/preloader";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import Login from "./components/Login/login";
@@ -10,12 +11,15 @@ import ProfileContainer from "./components/Profile/ProfileContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 import { initialize } from "./Redux/app-reducer";
 
-
 class App extends React.Component {
   componentDidMount() {
-    this.props.getAuth();
+    this.props.initialize();
   }
+
   render() {
+    if (!this.props.initializet) {
+      <Preloader />;
+    }
     return (
       <div className="app-wrapper">
         <HeaderContainer />
@@ -31,4 +35,10 @@ class App extends React.Component {
   }
 }
 
-export default connect(null, { initialize })(App);
+const mapStateToPrors = (state) => {
+  return {
+    initializet: state.app.initializet,
+  };
+};
+
+export default connect(mapStateToPrors, { initialize })(App);
