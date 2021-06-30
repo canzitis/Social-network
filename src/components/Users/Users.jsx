@@ -15,7 +15,7 @@ const Users = (props) => {
       <div>
         {pages.map((p) => {
           return (
-            <span className={s.activBtnPages}>
+            <span className={s.activBtnPages} key={p.id}>
               <button
                 className={props.currentPage === p && s.buttonAktive}
                 onClick={() => {
@@ -32,7 +32,7 @@ const Users = (props) => {
         {props.bootResponse ? <img src={loadingGIF} alt="" /> : null}
       </div>
       {props.users.map((u) => (
-        <div className={s.usersBorder}>
+        <div className={s.usersBorder} key={u.id}>
           <NavLink to={"/profile/" + u.id}>
             <img src={u.photos.small ? u.photos.small : baseImgUsers} alt="" />
           </NavLink>
