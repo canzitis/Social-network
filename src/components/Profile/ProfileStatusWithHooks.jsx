@@ -21,8 +21,8 @@ const ProfileStatusWithHooks = (props) => {
 
   return (
     <div className={s.statusBorder}>
-      <h3 className={s.statusH3}>Статус:</h3>
       <div className={s.status}>
+        <h5>Статус:</h5>
         {editMode ? (
           <div>
             <input onChange={onStatusChange} value={status} />

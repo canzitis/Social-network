@@ -5,6 +5,7 @@ import likeIMG from "../../img/likeIMG.jpg";
 import dislike from "../../img/dislikeIMG.png";
 import baseImgUsers from "../../img/baseImgUsers.png";
 import ProfileStatusWithHooks from "../ProfileStatusWithHooks";
+import MyPostsContainer from "../MyPosts/MyPostsContainer";
 
 const ProfileInfo = (props) => {
   if (!props.userProfile) {
@@ -20,9 +21,12 @@ const ProfileInfo = (props) => {
             <img src={props.userProfile.photos.large} alt="" />
           )}
         </div>
+        <MyPostsContainer />
       </div>
       <div className={s.contentB}>
+        <h4 className={s.fullName}>{props.userProfile.fullName}</h4>
         <ProfileStatusWithHooks {...props} />
+        <div className={s.border}></div>
         <h4>about Me:</h4> <p>{props.userProfile.aboutMe}</p>
         <h4>instagram:</h4>
         <a href={props.userProfile.contacts.instagram}>
@@ -54,8 +58,6 @@ const ProfileInfo = (props) => {
           </a>
         </p>
       </div>
-
-      <div className={s.endLine}></div>
     </div>
   );
 };
