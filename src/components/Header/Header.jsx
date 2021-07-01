@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import s from "./Header.module.css";
+import logoComoany from "../img/logoCompany.png";
+import searchImg from "../img/search.png";
 
 const Header = (props) => {
   const clikLogoutBtn = () => {
@@ -12,14 +14,15 @@ const Header = (props) => {
 
   return (
     <header className={s.header}>
-      <img
-        src="https://p7.hiclipart.com/preview/359/743/635/logo-clip-art-community.jpg"
-        alt=""
-      />
+      <h3>CatHub</h3>
+      <h5>New Social Network</h5>
+      <img className={s.logoCompany} src={logoComoany} alt="" />
+      <img className={s.searchImg} src={searchImg} alt="" />
+      <input className={s.search} type="search" placeholder="Search" />
       <div className={s.login}>
         {props.isAuth ? (
           <div className={s.loginInfoUser}>
-            {props.login}
+            <div className={s.userLogin}>{props.login}</div>
             <button onClick={clikLogoutBtn} className={s.buttonExitLogin}>
               Log out
             </button>

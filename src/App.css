@@ -1,21 +1,35 @@
+.content{
+  padding: 0 70px 0 70px;
+  background-color: rgb(206, 206, 206);
+}
+
 .app-wrapper{
+   
   display: grid;
+  grid-template-columns: 1fr 10fr;
 
   grid-template-areas: 
   "h h"
-  "n c";
+  "n c ";
 
   grid-template-rows: 60px 1 fr;
-  grid-template-columns: 2fr 10fr;
+  
   grid-gap: 10px;
 
 }
 
+
+
 .app-wrapper-content{
 
   grid-area: c;
+
+  border-radius: 25px;
   
-  background-color: rgb(166, 151, 250);
+  background-color:white;
 
   padding: 10px;
+
+  margin-bottom: 20px;
 }
+

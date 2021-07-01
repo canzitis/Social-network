@@ -1,3 +1,16 @@
+.contentA{
+    float: left;
+}
+
+.userImg img{
+    border-radius: 50%;
+}
+
+.contentB{
+    width: 100px;
+    height: 100px;
+float: right;
+}
 
 .likeImg img{
     width: 30px;
