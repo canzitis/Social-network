@@ -1,41 +1,64 @@
 .dialogs{
-    display:grid;
-    grid-template-columns: 2fr 10fr;
+    display:flex;
 }
 
-.dialogsItems{
-    padding: 10px;
+.dialogName {
+    border-right: solid black 1px;
 }
 
 .messages{
     padding: 10px;
 }
 
-.dialog a{ 
+.dialogName a{ 
+    padding-left:10px;
+    padding-right: 30px;
+    margin-top: 20px;
     text-decoration: none;
     
+   
     font-size: 20px;
-    color:white;
+    color:black;
 }
 
-.dialog a:hover{
-    text-decoration: underline;
+.dialogName :hover{
+    padding-left: 10px;
+
 }
+
 
 .dialogsItem a.activeLink{
-    color: gold
+    font-weight: 700;
+    color: rgb(128, 128, 128);
+    padding-left: 10px;
 }
 
 .buttonAddMessages{
+    margin-top: 5px;
+    margin-left: 300px;
+    border-radius: 25px;
     width: 100px;
-    height: 20px;
+    height: 25px;
 }
 
-.dialogInput{
+.buttonAddMessages:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+.dialogInput input{
+    border-radius: 25px;
     width: 400px;
     height:80px;
     
-    margin-top: 100px;
+    margin-top: 30px;
+}
+
+.border{
+    width: 50%;
+    border-bottom: solid black 1px;
+    padding-top: 130px;
+   
 }
 
 

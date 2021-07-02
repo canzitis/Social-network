@@ -28,9 +28,8 @@ const DialogForm = (props) => {
         handleBlur,
         handleSubmit,
       }) => (
-        <form onSubmit={handleSubmit}>
+        <form className={s.dialogInput} onSubmit={handleSubmit}>
           <input
-            className={s.dialogInput}
             type="text"
             name="text"
             onChange={handleChange}
@@ -39,7 +38,7 @@ const DialogForm = (props) => {
           />
 
           <div>
-            <button type="submit" className={s.buttonAddPost}>
+            <button type="submit" className={s.buttonAddMessages}>
               Add Message
             </button>
             <div className={s.errorsText}>

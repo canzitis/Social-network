@@ -50,28 +50,38 @@ padding: 10px 0px 10px 20px;
 }
 
 .aboutMeBloc{
-    margin-top:25px;
+    display: flex;
+    margin-top:50px;
     margin-bottom: 30px;
 }
 
 .aboutMeBloc img{
+    margin-top: 4px;
+    padding-right: 5px;
     width: 21px;
     height: 21px;
 }
 
 .information{
+    display: flex;
+
     color: blue;
     font-weight: 500;
     font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.informationImg {
+    width: 21px;
+    height: 21px;
+    margin-top: 33px;
+    padding-right: 5px;
 }
 
 .contactsBloc{
     display: flex;
     flex-direction: row;
     justify-content: left;
-    
 }
 
 .itemInformationBlocContact{

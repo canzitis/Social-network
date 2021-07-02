@@ -2,7 +2,7 @@
     grid-area: n;
 
     height: 500px;
-    width: 120px;
+    width: 130px;
     padding: 20px 0px 0px 15px;
   
     background-color: white;
@@ -37,5 +37,6 @@
 
 .item a.activeLink{
   color: rgb(136, 136, 136);
-  padding-left: 3px
+  padding-left: 3px;
+  font-weight: 700;
 }

@@ -4,16 +4,16 @@
     grid-area: h;
     border-radius: 25px;
     background-color: white;
-  }
+ }
 
-  .logoCompany{
+.logoCompany{
     width: 60px;
     padding: 5px;
 
     padding-left: 20px;
-  }
+}
 
-  .header h3{
+.header h3{
     color: black;
     position: absolute;
     margin-top: 0px;
@@ -21,16 +21,19 @@
     padding-left: 90px;
     font-size: 25px;
     font-weight: 800;  
-  }
-
-  .header h5{
+}
+.helloImg img{
+    width: 17px;
+    height: 17px;
+}
+.header h5{
   position: absolute;
-  padding-left: 100px;
   padding-top: 15px;
+  padding-left: 100px;
   font-weight: 400; 
 }
 
-.search{
+  .search{
   position: absolute;
 
   border-radius: 25px;
@@ -39,17 +42,17 @@
   height: 25px;
   margin-left: 500px;
   margin-top: 25px;
-}
+  }
 
-.searchImg{
+  .searchImg{
   position: absolute;
   width: 16px;
   height: 16px;
   margin-left: 480px;
   margin-top: 30px;
-}
+  }
 
-  .login{
+.login{
     float: right;
 
     font-size: 20px;
@@ -57,62 +60,58 @@
     text-align: right;
     
     padding-right: 10px;
-   }
+}
 
-   .login a{
+.login a{
      color: white;
      text-decoration: none ;
-   }
+}
 
-   .loginInfoUser{
+.loginInfoUser{
      text-align: right;
      padding: 5px;
      
-   }
+}
 
-  
-
-   .userLogin{
+.userLogin{
      font-size: 18px;
      font-weight: 500;
-   }
+}
 
-   .userLogin img{
+.userLogin img{
      padding-right: 5px;
      width: 17px;
      height: 17px;
-   }
+}
 
 
-   .buttonExitLogin{
-     width: 70px;
-     height: 20px;
+.buttonExitLogin{
+     padding-top: 5px;
+    width: 25px;
+    height: 25px;
+}
+  
+.buttonLogin img{
+    padding-top: 12px;
+    padding-right: 10px;
+    width: 18px;
+    height: 18px;
+}
 
-     border-radius: 25px;
+.buttonLogin :hover{
+  cursor: pointer;
+  width: 23px;
+  height: 23px;
+}
 
-     color:red;
-     font-size: 12px;
-     font-weight: 600;
-   }
-   
-   .buttonLogin{
-    width: 70px;
-    height: 20px;
+.buttonExitLogin:hover{
+     cursor:pointer;
+    width: 30px;
+    height: 30px;
+     
+}
 
-    border-radius: 25px;
-
-    background-color: black;
-    font-size: 12px;
-    font-weight: 600;
-   }
-
-   .buttonExitLogin:hover{
-     background-color:red;
-     color:black;
-     cursor: pointer;
-   }
-
-   .search:active, :hover, :focus {
+.search:active, :hover, :focus {
     outline: 0;
     outline-offset: 0;
 }

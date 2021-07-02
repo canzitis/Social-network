@@ -3,7 +3,10 @@ import { NavLink } from "react-router-dom";
 import s from "./Header.module.css";
 import logoComoany from "../img/logoCompany.png";
 import searchImg from "../img/search.png";
-import userIco from "../img/user-ico.png";
+import profileIco from "../img/profile.png";
+import loginImg from "../img/log-in.png";
+import logoutImg from "../img/log-out.png";
+import helloImg from "../img/hello.png";
 
 const Header = (props) => {
   const clikLogoutBtn = () => {
@@ -16,7 +19,9 @@ const Header = (props) => {
   return (
     <header className={s.header}>
       <h3>CatHub</h3>
-      <h5>New Social Network</h5>
+      <h5 className={s.helloImg}>
+        New Social Network <img src={helloImg} alt="" />
+      </h5>
       <img className={s.logoCompany} src={logoComoany} alt="" />
       <img className={s.searchImg} src={searchImg} alt="" />
       <input className={s.search} type="search" placeholder="Search" />
@@ -24,17 +29,20 @@ const Header = (props) => {
         {props.isAuth ? (
           <div className={s.loginInfoUser}>
             <div className={s.userLogin}>
-              <img src={userIco} alt="" />
+              <img src={profileIco} alt="" />
               {props.login}
             </div>
-            <button onClick={clikLogoutBtn} className={s.buttonExitLogin}>
-              Log out
-            </button>
+            <img
+              src={logoutImg}
+              alt=""
+              onClick={clikLogoutBtn}
+              className={s.buttonExitLogin}
+            />
           </div>
         ) : (
-          <button onClick={props.login} className={s.buttonLogin}>
-            <NavLink to={"/login"}>Login</NavLink>
-          </button>
+          <NavLink to={"/login"} className={s.buttonLogin}>
+            <img src={loginImg} alt="" onClick={props.login} />
+          </NavLink>
         )}
       </div>
     </header>

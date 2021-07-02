@@ -20,6 +20,7 @@ const Dialogs = (props) => {
       <div className={s.dialogsItem}>{dialogsElements}</div>
       <div className={s.messages}>
         <div>{messagesElements}</div>
+        <div className={s.border}></div>
         <DialogForm addMessage={props.addMessage} />
       </div>
     </div>

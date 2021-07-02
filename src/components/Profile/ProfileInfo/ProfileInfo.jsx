@@ -7,6 +7,8 @@ import baseImgUsers from "../../img/baseImgUsers.png";
 import ProfileStatusWithHooks from "../ProfileStatusWithHooks";
 import MyPostsContainer from "../MyPosts/MyPostsContainer";
 import aboutMe from "../../img/aboytMe.png";
+import contactsImg from "../../img/contacts.png";
+
 const ProfileInfo = (props) => {
   debugger;
   if (!props.userProfile) {
@@ -34,7 +36,10 @@ const ProfileInfo = (props) => {
         <div className={s.border}></div>
         <div className={s.informationBloc}>
           <div className={s.itemInformationBloc}></div>
-          <div className={s.information}>information about me:</div>
+          <div className={s.information}>
+            <img className={s.informationImg} src={contactsImg} alt="" />
+            <h5>information about me:</h5>
+          </div>
           <h4>Contacts:</h4>
           <div className={s.contactsBloc}>
             <div className={s.w}>
