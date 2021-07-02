@@ -36,6 +36,7 @@ const PostForm = (props) => {
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.text}
+            placeholder="write a post"
           />
 
           <div>

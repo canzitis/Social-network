@@ -8,6 +8,7 @@ import ProfileStatusWithHooks from "../ProfileStatusWithHooks";
 import MyPostsContainer from "../MyPosts/MyPostsContainer";
 
 const ProfileInfo = (props) => {
+  debugger;
   if (!props.userProfile) {
     return <Preloader />;
   }
@@ -27,36 +28,54 @@ const ProfileInfo = (props) => {
         <h4 className={s.fullName}>{props.userProfile.fullName}</h4>
         <ProfileStatusWithHooks {...props} />
         <div className={s.border}></div>
-        <h4>about Me:</h4> <p>{props.userProfile.aboutMe}</p>
-        <h4>instagram:</h4>
-        <a href={props.userProfile.contacts.instagram}>
-          <p>{props.userProfile.contacts.instagram}</p>
-        </a>
-        <h4>github:</h4> <p>{props.userProfile.contacts.github}</p>
-        <h4>
-          <p className={s.likeImg}>
-            looking For A Job:
-            {props.userProfile.lookingForAJob ? (
-              <img src={likeIMG} alt="" />
-            ) : (
-              <img src={dislike} alt="" />
-            )}
+        <div className={s.information}>information about me:</div>
+        <div className={s.informationBloc}>
+          <div className={s.itemInformationBloc}>
+            <img src="" alt="" />
+            <h4>about Me:</h4> <p>{props.userProfile.aboutMe}</p>
+          </div>
+          <div className={s.itemInformationBloc}>
+            <h4>instagram:</h4>
+            <a href={props.userProfile.contacts.instagram}>
+              <p>{props.userProfile.contacts.instagram}</p>
+            </a>
+          </div>
+          <div className={s.itemInformationBloc}>
+            <h4>github:</h4> <p>{props.userProfile.contacts.github}</p>
+          </div>
+        </div>
+        <div className={s.informationBlocTo}>
+          <div className={s.itemInformationBloc}>
+            <h4>
+              <p className={s.likeImg}>
+                looking For A Job:
+                {props.userProfile.lookingForAJob ? (
+                  <img src={likeIMG} alt="" />
+                ) : (
+                  <img src={dislike} alt="" />
+                )}
+              </p>
+            </h4>
+            <h4>looking For A Job Description:</h4>
+            <p>{props.userProfile.lookingForAJobDescription}</p>
+          </div>
+        </div>
+        <div className={s.itemInformationBloc}>
+          <h4>vk:</h4>
+          <p>
+            <a href={props.userProfile.contacts.vk}>
+              {props.userProfile.contacts.vk}
+            </a>
           </p>
-        </h4>
-        <h4>looking For A Job Description:</h4>
-        <p>{props.userProfile.lookingForAJobDescription}</p>
-        <h4>vk:</h4>
-        <p>
-          <a href={props.userProfile.contacts.vk}>
-            {props.userProfile.contacts.vk}
-          </a>
-        </p>
-        <h4>twitter:</h4>
-        <p>
-          <a href={props.userProfile.contacts.twitter}>
-            {props.userProfile.contacts.twitter}
-          </a>
-        </p>
+        </div>
+        <div className={s.itemInformationBloc}>
+          <h4>twitter:</h4>
+          <p>
+            <a href={props.userProfile.contacts.twitter}>
+              {props.userProfile.contacts.twitter}
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );

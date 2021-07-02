@@ -31,6 +31,7 @@ const Users = (props) => {
       <div className={s.loaderGif}>
         {props.bootResponse ? <img src={loadingGIF} alt="" /> : null}
       </div>
+
       {props.users.map((u) => (
         <div className={s.usersBorder} key={u.id}>
           <NavLink to={"/profile/" + u.id}>

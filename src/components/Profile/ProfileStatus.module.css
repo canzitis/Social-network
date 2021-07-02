@@ -3,6 +3,12 @@ margin-right:250px;
 margin-bottom: 20px;
 }
 
+.inputStatus input {
+    width: 300px;
+    height: 17px;
+    border-radius: 25px;
+}
+
 .status{   
     padding-bottom: 5px;
     padding-top: 10px;
@@ -12,15 +18,27 @@ margin-bottom: 20px;
 
 }
 
-
-
 .status h5{
     margin: 0;
+}
+
+.status h4{
     color: black;
+    margin: 0;
 }
 
 .spanStatus :hover{
     cursor: pointer;
 }
 
+
+.statusSetup{
+    color:rgb(177, 177, 177);
+}
+
+.spanStatus img{
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+}
 

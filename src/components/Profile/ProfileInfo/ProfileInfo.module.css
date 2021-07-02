@@ -1,9 +1,14 @@
-.contentA{
-    float: left;
+.content{
+    display: flex;
+    
 }
+
+.contentA{
+padding: 10px 0px 10px 30px;
+}
+
 .contentB{
-    float: right;
-    padding-left: 30px;
+    padding-left: 100px;
 }
 
 
@@ -17,8 +22,8 @@
 
 .border{
     padding: 0;
-    border:1px solid black;
-    margin-bottom:10px
+    border: 1px solid black;
+    margin-bottom:50px
 }
 
 .likeImg img{
@@ -41,3 +46,11 @@
     width: 300px;
     height: 300px;
 }
+
+.information{
+    color: blue;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+

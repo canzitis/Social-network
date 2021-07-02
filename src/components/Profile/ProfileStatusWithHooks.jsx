@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import s from "./ProfileStatus.module.css";
+import penImg from "../img/pen.png";
 
 const ProfileStatusWithHooks = (props) => {
   const [editMode, setEditMode] = useState(false);
@@ -24,7 +25,7 @@ const ProfileStatusWithHooks = (props) => {
       <div className={s.status}>
         <h5>Статус:</h5>
         {editMode ? (
-          <div>
+          <div className={s.inputStatus}>
             <input onChange={onStatusChange} value={status} />
             <div>
               <button onClick={deactivatedEditMode}>Save</button>
@@ -34,15 +35,22 @@ const ProfileStatusWithHooks = (props) => {
           <div className={s.spanStatus}>
             {true ? (
               <span onClick={activatedEditMode}>
-                {!props.status
-                  ? "Здесь должен быть статус,но его не добавил :("
-                  : props.status}
+                {!props.status ? (
+                  <h5 className={s.statusSetup}>
+                    <img src={penImg} alt="" />
+                    Установить статус
+                  </h5>
+                ) : (
+                  <h4>{props.status}</h4>
+                )}
               </span>
             ) : (
-              <span>
-                {!props.status
-                  ? "Здесь должен быть статус,но его не добавил :("
-                  : props.status}
+              <span className={s.statusSetup}>
+                {!props.status ? (
+                  <h5>Установить статус</h5>
+                ) : (
+                  <h4>{props.status}</h4>
+                )}
               </span>
             )}
           </div>
