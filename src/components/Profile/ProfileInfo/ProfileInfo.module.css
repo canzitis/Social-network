@@ -4,16 +4,18 @@
 }
 
 .contentA{
-padding: 10px 0px 10px 30px;
+padding: 10px 0px 10px 20px;
 }
 
 .contentB{
-    padding-left: 100px;
+    padding-left: 70px;
 }
 
 
 .userImg img{
     border-radius: 50%;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5)
+
 }
 
 .fullName{
@@ -23,7 +25,7 @@ padding: 10px 0px 10px 30px;
 .border{
     padding: 0;
     border: 1px solid black;
-    margin-bottom:50px
+    margin-bottom:20px
 }
 
 .likeImg img{
@@ -47,10 +49,31 @@ padding: 10px 0px 10px 30px;
     height: 300px;
 }
 
+.aboutMeBloc{
+    margin-top:25px;
+    margin-bottom: 30px;
+}
+
+.aboutMeBloc img{
+    width: 21px;
+    height: 21px;
+}
+
 .information{
     color: blue;
     font-weight: 500;
     font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+.contactsBloc{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    
+}
 
+.itemInformationBlocContact{
+    margin-left: 20px; 
+}

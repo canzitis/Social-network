@@ -12,29 +12,28 @@ const Users = (props) => {
   }
   return (
     <div className={s.users}>
-      <div>
-        {pages.map((p) => {
-          return (
-            <span className={s.activBtnPages} key={p.id}>
-              <button
-                className={props.currentPage === p && s.buttonAktive}
-                onClick={() => {
-                  props.onPageChanged(p);
-                }}
-              >
-                {p}
-              </button>
-            </span>
-          );
-        })}
-      </div>
+      {pages.map((p) => {
+        return (
+          <span className={s.activBtnPages} key={p.id}>
+            <button
+              className={props.currentPage === p && s.buttonAktive}
+              onClick={() => {
+                props.onPageChanged(p);
+              }}
+            >
+              {p}
+            </button>
+          </span>
+        );
+      })}
+
       <div className={s.loaderGif}>
         {props.bootResponse ? <img src={loadingGIF} alt="" /> : null}
       </div>
 
       {props.users.map((u) => (
         <div className={s.usersBorder} key={u.id}>
-          <NavLink to={"/profile/" + u.id}>
+          <NavLink className={s.usersImg} to={"/profile/" + u.id}>
             <img src={u.photos.small ? u.photos.small : baseImgUsers} alt="" />
           </NavLink>
           <h3>{u.name}</h3>

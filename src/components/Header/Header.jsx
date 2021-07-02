@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import s from "./Header.module.css";
 import logoComoany from "../img/logoCompany.png";
 import searchImg from "../img/search.png";
+import userIco from "../img/user-ico.png";
 
 const Header = (props) => {
   const clikLogoutBtn = () => {
@@ -22,7 +23,10 @@ const Header = (props) => {
       <div className={s.login}>
         {props.isAuth ? (
           <div className={s.loginInfoUser}>
-            <div className={s.userLogin}>{props.login}</div>
+            <div className={s.userLogin}>
+              <img src={userIco} alt="" />
+              {props.login}
+            </div>
             <button onClick={clikLogoutBtn} className={s.buttonExitLogin}>
               Log out
             </button>

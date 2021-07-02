@@ -77,6 +77,11 @@
      font-weight: 500;
    }
 
+   .userLogin img{
+     padding-right: 5px;
+     width: 17px;
+     height: 17px;
+   }
 
 
    .buttonExitLogin{

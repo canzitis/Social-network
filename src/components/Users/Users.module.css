@@ -6,6 +6,10 @@
  
 }
 
+.usersImg img{
+  border-radius: 50px;
+}
+
 .usersBorder{
   border-bottom: solid 1px black;
 }
