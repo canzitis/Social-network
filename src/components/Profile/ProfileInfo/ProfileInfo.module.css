@@ -14,9 +14,9 @@ padding: 10px 0px 10px 20px;
 
 .userImg img{
     border-radius: 50%;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.5)
-
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5)
 }
+
 
 .fullName{
     font-size: 30px;

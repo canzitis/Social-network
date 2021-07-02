@@ -1,5 +1,6 @@
 import { Formik } from "formik";
 import React from "react";
+import s from "./login.module.css";
 
 const validateEmail = (values) => {
   const errors = {};
@@ -31,7 +32,7 @@ const LoginForm = (props) => {
         handleSubmit,
         isSubmitting,
       }) => (
-        <form onSubmit={handleSubmit}>
+        <form className={s.LoginForm} onSubmit={handleSubmit}>
           <input
             placeholder="Email"
             type="email"
@@ -52,7 +53,7 @@ const LoginForm = (props) => {
             />
           </div>
           {errors.password && touched.password && errors.password}
-          <button type="submit" disabled={isSubmitting}>
+          <button className={s.loginBtn} type="submit" disabled={isSubmitting}>
             Submit
           </button>
         </form>

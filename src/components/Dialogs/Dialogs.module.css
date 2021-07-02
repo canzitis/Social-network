@@ -2,29 +2,34 @@
     display:flex;
 }
 
+.dialog{
+    padding-left: 20px;
+    border-left: solid black 1px;
+}
+
 .dialogName {
-    border-right: solid black 1px;
+    margin-right: 30px;
+    
+}
+
+.dialogName a{ 
+    padding-left:10px;
+    text-decoration: none;
+
+    font-size: 20px;
+    color:black;
+}
+
+.dialogName:hover{
+    padding-left: 10px;
+
 }
 
 .messages{
     padding: 10px;
 }
 
-.dialogName a{ 
-    padding-left:10px;
-    padding-right: 30px;
-    margin-top: 20px;
-    text-decoration: none;
-    
-   
-    font-size: 20px;
-    color:black;
-}
 
-.dialogName :hover{
-    padding-left: 10px;
-
-}
 
 
 .dialogsItem a.activeLink{
@@ -43,7 +48,7 @@
 
 .buttonAddMessages:hover{
     cursor: pointer;
-    background-color: green;
+    background-color: rgb(204, 236, 204)
 }
 
 .dialogInput input{

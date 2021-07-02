@@ -1,0 +1,32 @@
+.loginPage {
+    text-align: center;
+}
+.loginPage h1{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.loginPage img{
+   margin-top: 20px;
+    width: 30px;
+    height: 22px;
+}
+
+.LoginForm input{
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+}
+
+.loginBtn{
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+}
+
+.loginBtn:hover{
+    cursor: pointer;
+    background-color: rgb(204, 236, 204);
+}

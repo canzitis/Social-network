@@ -18,3 +18,8 @@
 .likesBtn:hover{
     cursor: pointer;
 } 
+
+.likes Img{
+    width: 10px;
+    height: 10px;
+}

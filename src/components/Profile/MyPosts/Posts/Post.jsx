@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./Post.module.css";
+import likesImg from "../../../img/likes.png";
 
 const Post = (props) => {
   return (
@@ -9,7 +10,12 @@ const Post = (props) => {
         alt=""
       />
       {props.message}
-      <button className={s.likesBtn}>{`Likes: ${props.likesCount}`}</button>
+      <div>
+        <h5 lassName={s.likes}>
+          <img src={likesImg} alt="" />
+          {props.likesCount}
+        </h5>
+      </div>
     </div>
   );
 };
