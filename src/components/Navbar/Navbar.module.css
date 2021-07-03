@@ -31,8 +31,7 @@
 
 .nav a:hover{
   text-decoration: none;
-  padding-left: 3px
-  
+  padding-left: 3px;
 }
 
 .item a.activeLink{

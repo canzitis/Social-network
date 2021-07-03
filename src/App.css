@@ -10,7 +10,8 @@
 
   grid-template-areas: 
   "h h"
-  "n c ";
+  "n c"
+  'f f';
 
   grid-template-rows: 60px 1 fr;
   

@@ -34,23 +34,22 @@ const ProfileInfo = (props) => {
         <ProfileStatusWithHooks {...props} />
         <div className={s.border}></div>
         <div className={s.informationBloc}>
-          <div className={s.itemInformationBloc}></div>
           <div className={s.information}>
             <img className={s.informationImg} src={contactsImg} alt="" />
-            <h5>information about me:</h5>
+            <h5>Information about me:</h5>
           </div>
-          <h4>Contacts:</h4>
           <div className={s.contactsBloc}>
-            <div className={s.w}>
+            <div className={s.itemInformationBlocContact}>
               <h4>Instagram:</h4>
+
               <a href={props.userProfile.contacts.instagram}>
                 <p>{props.userProfile.contacts.instagram}</p>
               </a>
             </div>
             <div className={s.itemInformationBlocContact}>
-              <h4>GitHub:</h4> <p>{props.userProfile.contacts.github}</p>
+              <h4>GitHub:</h4>
+              <p>{props.userProfile.contacts.github}</p>
             </div>
-
             <div className={s.itemInformationBlocContact}>
               <h4>Twitter:</h4>
               <p>

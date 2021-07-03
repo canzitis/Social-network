@@ -14,8 +14,9 @@ const MyPosts = (props) => {
   return (
     <div className={s.posts}>
       <h3>Posts:</h3>
-      <PostsForm addPost={props.addPost} />
       <div>{postsElements}</div>
+      <div className={s.border}></div>
+      <PostsForm addPost={props.addPost} />
     </div>
   );
 };

@@ -1,0 +1,68 @@
+.footer{
+    width: 100%;
+
+    padding-top: 50px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+    text-align: center;
+   
+    background-color: rgb(206, 206, 206);
+    grid-area: f;
+ }
+
+ .borderFooter{
+     width: 80%;
+     margin-bottom: 10px;
+     margin-left: 10%;
+
+    border-top: solid black 1px;
+ }
+
+ .contacts{
+    padding: 0 100px 0 100px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+ .contacts p{
+     border-bottom: solid black 1px;
+ }
+
+ .contacts a{
+     padding: 10px;
+     text-decoration: none;
+     color: black;
+ }
+
+ .contacts img{
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+ }
+
+ .footerInfo{
+     margin: 0;
+     margin-left: 200px;
+
+     display: flex;
+     flex-direction: column;
+    text-align: left;
+ }
+
+ .footerInfo h6{
+     margin: 5px;
+ }
+
+ .helpProect{
+    padding-bottom: 10px;
+    margin: 0;
+   
+ }
+
+ .helpProect a{
+    text-decoration: none;
+    color: black;
+ }

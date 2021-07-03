@@ -19,6 +19,7 @@
 
 .profileInput{
     border-radius: 25px;
+    margin-top: 20px;
 
     width: 400px;
     height: 100px;
@@ -33,4 +34,9 @@
 
 .postsElement img{
     border-radius: 50px;
+}
+
+.border{
+    margin-top: 50px;
+    border: solid black 1px;
 }
