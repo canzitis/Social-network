@@ -1,6 +1,13 @@
-.item img{
+.item{
+    border: solid black 1px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.avaPostUser{
     width: 90px;
     height: 90px;
+    border-radius: 50px;
+    padding: 10px;
 }
 
 .likesBtn{
@@ -19,7 +26,22 @@
     cursor: pointer;
 } 
 
-.likes Img{
-    width: 10px;
-    height: 10px;
+
+.likes {
+    width: 13px;
+    height: 13px;
+
+    border-radius: 0px;
+    margin-left: 350px;
+   
+    padding-right: 3px; 
+}
+
+.likes:hover{
+    cursor: pointer;
+}
+
+.item h5{
+    padding-bottom: 5px;
+    margin: 0px;
 }

@@ -10,7 +10,6 @@ import aboutMe from "../../img/aboytMe.png";
 import contactsImg from "../../img/contacts.png";
 
 const ProfileInfo = (props) => {
-  debugger;
   if (!props.userProfile) {
     return <Preloader />;
   }

@@ -6,13 +6,14 @@ const Post = (props) => {
   return (
     <div className={s.item}>
       <img
+        className={s.avaPostUser}
         src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
         alt=""
       />
       {props.message}
       <div>
-        <h5 lassName={s.likes}>
-          <img src={likesImg} alt="" />
+        <h5>
+          <img className={s.likes} src={likesImg} alt="" />
           {props.likesCount}
         </h5>
       </div>
