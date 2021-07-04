@@ -3,6 +3,7 @@ import s from "./footer.module.css";
 import vkLogo from "../img/vk.png";
 import instaLogo from "../img/instagram.png";
 import gitHubLogo from "../img/github.png";
+
 const Footer = () => {
   return (
     <div className={s.footer}>
@@ -20,15 +21,17 @@ const Footer = () => {
           <img src={gitHubLogo} alt="" /> GitHub
         </a>
       </div>
-      <div className={s.footerInfo}>
-        <h6> © 2021 GatHub, Inc</h6>
-        <h6>Website creation at home</h6>
+      <div className={s.contactsInfo}>
+        <div className={s.footerInfo}>
+          <h6> © 2021 GatHub, Inc</h6>
+          <h6>Website creation at home</h6>
+          <h6>
+            <a href="https://online.sberbank.ru/CSAFront/index.do#/">
+              Help the project
+            </a>
+          </h6>
+        </div>
       </div>
-      <h5 className={s.helpProect}>
-        <a href="https://online.sberbank.ru/CSAFront/index.do#/">
-          Help the project
-        </a>
-      </h5>
     </div>
   );
 };

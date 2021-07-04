@@ -1,7 +1,6 @@
 .footer{
     width: 100%;
-
-    padding-top: 50px;
+    padding-top: 300px;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   
@@ -45,11 +44,12 @@
 
  .footerInfo{
      margin: 0;
-     margin-left: 200px;
-
+     padding-bottom: 10px;
+     
      display: flex;
-     flex-direction: column;
-    text-align: left;
+     flex-direction: row;
+     justify-content: space-around;
+     text-align: left;
  }
 
  .footerInfo h6{
@@ -62,7 +62,9 @@
    
  }
 
- .helpProect a{
+ .footerInfo a{
+    
     text-decoration: none;
     color: black;
  }
+
