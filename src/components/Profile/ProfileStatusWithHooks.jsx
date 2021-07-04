@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import s from "./ProfileStatus.module.css";
 import penImg from "../img/pen.png";
@@ -6,6 +6,10 @@ import penImg from "../img/pen.png";
 const ProfileStatusWithHooks = (props) => {
   const [editMode, setEditMode] = useState(false);
   const [status, updateStatus] = useState(props.status);
+
+  useEffect(() => {
+    updateStatus(props.status);
+  }, [props.status] );
 
   const activatedEditMode = () => {
     setEditMode(true);
