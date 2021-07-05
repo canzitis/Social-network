@@ -8,10 +8,10 @@
 
 .logoCompany{
     width: 60px;
-    padding: 5px;
-
+    padding-top: 5px;
     padding-left: 20px;
 }
+
 
 .header h3{
     color: black;
@@ -23,6 +23,7 @@
     font-weight: 800;  
 }
 .helloImg img{
+    padding-top: 5px;
     width: 15px;
     height: 15px;
 }
@@ -32,24 +33,26 @@
   padding-left: 100px;
   font-weight: 400; 
 }
+.searchBloc{
+    padding-top: 25px;
+}
+.headerInfo{
+   display: flex;
+   justify-content: space-between;
+}
 
-  .search{
-  position: absolute;
-
+  .searchInput{
   border-radius: 25px;
 
-  width: 300px;
+  width: 200px;
   height: 25px;
-  margin-left: 500px;
-  margin-top: 25px;
   }
 
   .searchImg{
-  position: absolute;
   width: 16px;
-  height: 16px;
-  margin-left: 480px;
-  margin-top: 30px;
+  height: 16px; 
+  padding-left: 150px;
+  padding-right: 5px;
   }
 
 .login{
@@ -58,8 +61,7 @@
     font-size: 20px;
 
     text-align: right;
-    
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .login a{
