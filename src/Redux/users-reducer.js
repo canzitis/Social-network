@@ -131,45 +131,41 @@ export const toogleFollowingProgress = (isFetching, userId) => {
 };
 
 export const getUsers = (currentPage, pageSize) => {
-  return (dispatch) => {
+  return async (dispatch) => {
 
     dispatch(setBootResponse(true));
     dispatch(setCurrentPage(currentPage))
     dispatch(setUsers([
       /* ОЧИЩАЕМ ПОЛЬЗОВАТЕЛЕЙ ПОКА НЕ ЗАГРУЗИТСЯ ОТВЕТ С СЕРВА */
     ]));
-    userAPI
-      .getUsers(currentPage, pageSize)
-      .then((data) => {
-        dispatch(setBootResponse(false));
-        dispatch(setUsers(data.items));
-        dispatch(setTotalUsersCount(data.totalCount));
-      });
+    const data = await userAPI.getUsers(currentPage, pageSize);
+    dispatch(setBootResponse(false));
+    dispatch(setUsers(data.items));
+    dispatch(setTotalUsersCount(data.totalCount));
+
   }
 }
 
 
 export const follow = (userId) => {
-  return (dispatch) => {
+  return async (dispatch) => {
     dispatch(toogleFollowingProgress(true, userId));
-    followAPI.postFollow(userId).then((data) => {
-      if (data.resultCode === 0) {
-        dispatch(toogleFollowingProgress(false, userId));
-        dispatch(followSuccess(userId));
-      }
-    });
+    const data = await followAPI.postFollow(userId);
+    if (data.resultCode === 0) {
+      dispatch(toogleFollowingProgress(false, userId));
+      dispatch(followSuccess(userId));
+    }
   }
 }
 
 export const unfollow = (userId) => {
-  return (dispatch) => {
+  return async (dispatch) => {
     dispatch(toogleFollowingProgress(true, userId));
-    followAPI.deleteUnfollow(userId).then((data) => {
-      if (data.resultCode === 0) {
-        dispatch(toogleFollowingProgress(false, userId));
-        dispatch(unfollowSuccess(userId));
-      }
-    });
+    const data = await followAPI.deleteUnfollow(userId)
+    if (data.resultCode === 0) {
+      dispatch(toogleFollowingProgress(false, userId));
+      dispatch(unfollowSuccess(userId));
+    }
   }
 }
 

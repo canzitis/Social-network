@@ -89,21 +89,19 @@ export const getProfile = (id) => {
 }
 
 export const getStatus = (userid) => {
-  return (dispatch) => {
-    profileAPI.getStatus(userid).then((data) => {
-      dispatch(setStatus(data));
-    });
+  return async (dispatch) => {
+    const data = await profileAPI.getStatus(userid)
+    dispatch(setStatus(data));
   }
 }
 
 export const updateStatus = (status) => {
-  return (dispatch) => {
-    profileAPI.updateStatus(status).then((response) => {
-      if (response.resultCode === 0) {
-        dispatch(setStatus(status));
-      }
+  return async (dispatch) => {
+    const response = await profileAPI.updateStatus(status)
+    if (response.resultCode === 0) {
+      dispatch(setStatus(status));
+    }
 
-    });
   }
 }
 

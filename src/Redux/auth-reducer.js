@@ -56,22 +56,22 @@ export const getAuth = () => {
 }
 
 export const login = (email, password, rememberMe) => {
-  return (dispatch) => {
-    authAPI.login(email, password, rememberMe).then((data) => {
-      if (data.resultCode === 0) {
-        dispatch(getAuth())
-      }
-    });
+  return async (dispatch) => {
+    const data = await authAPI.login(email, password, rememberMe)
+    if (data.resultCode === 0) {
+      dispatch(getAuth())
+    }
+
   }
 }
 
 export const logout = () => {
-  return (dispatch) => {
-    authAPI.logout().then((data) => {
-      if (data.resultCode === 0) {
-        dispatch(setAuthUserData(null, null, null, false))
-      }
-    });
+  return async (dispatch) => {
+    const data = await authAPI.logout()
+    if (data.resultCode === 0) {
+      dispatch(setAuthUserData(null, null, null, false))
+    }
+
   }
 }
 

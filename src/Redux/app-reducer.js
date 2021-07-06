@@ -32,7 +32,7 @@ export const initializetSuccess = () => {
 
 export const initialize = () => {
 
-  return (dispatch) => {
+  return  (dispatch) => {
     const promise = dispatch(getAuth());
     promise.then(() => {
       dispatch(initializetSuccess())
