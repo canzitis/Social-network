@@ -9,6 +9,7 @@ import {
   getFollowingProgress,
   getIsFetching,
   getPageSize,
+  getPortionSize,
   getTotalUsersCount,
   getUserPageReselect,
 } from "../../Redux/Selectors/users-selector";
@@ -23,21 +24,7 @@ class UsersAPIContainer extends React.Component {
   };
 
   render() {
-    return (
-      <Users
-        users={this.props.users}
-        currentPage={this.props.currentPage}
-        pageSize={this.props.pageSize}
-        onPageChanged={this.onPageChanged}
-        follow={this.props.follow}
-        unfollow={this.props.unfollow}
-        bootResponse={this.props.bootResponse}
-        setBootResponse={this.props.setBootResponse}
-        isFetching={this.props.isFetching}
-        followingProgress={this.props.followingProgress}
-        totalUsersCount={this.props.totalUsersCount}
-      />
-    );
+    return <Users {...this.props} onPageChanged={this.onPageChanged} />;
   }
 }
 
@@ -62,6 +49,7 @@ const mapStateToProps = (state) => {
     bootResponse: getBootResponse(state),
     isFetching: getIsFetching(state),
     followingProgress: getFollowingProgress(state),
+    portionSize: getPortionSize(state),
   };
 };
 

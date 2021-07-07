@@ -3,30 +3,65 @@ import s from "./Users.module.css";
 import loadingGIF from "../img/loading-gif2.gif";
 import { NavLink } from "react-router-dom";
 import baseImgUsers from "../img/baseImgUsers.png";
+import { useState } from "react";
+import chevronBoubleLeft from "../img/chevron-double-left.png";
+import chevronBoubleRight from "../img/chevron-double-right.png";
 
 const Users = (props) => {
-  let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
-  let pages = [];
+  debugger;
+  const pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
+  const pagesPortionSize = Math.ceil(pagesCount / props.portionSize);
+  const [portionNumber, setPortionNumber] = useState(1);
+  const leftPortionPageNumber = (portionNumber - 1) * props.portionSize + 1;
+  const rightPortionPageNumber = portionNumber * props.portionSize;
+  const pages = [];
   for (let i = 1; i <= pagesCount; i++) {
     pages.push(i);
   }
   return (
     <div className={s.users}>
-      {pages.map((p) => {
-        return (
-          <span className={s.activBtnPages} key={p.id}>
-            <button
-              className={props.currentPage === p && s.buttonAktive}
+      <div className={s.PagesBloc}>
+        {portionNumber > 1 && (
+          <div className={s.chevronBoubleLeft}>
+            <img
               onClick={() => {
-                props.onPageChanged(p);
+                setPortionNumber(portionNumber - 1);
               }}
-            >
-              {p}
-            </button>
-          </span>
-        );
-      })}
-
+              src={chevronBoubleLeft}
+              alt=""
+            />
+          </div>
+        )}
+        {pages
+          .filter(
+            (p) => p >= leftPortionPageNumber && p <= rightPortionPageNumber
+          )
+          .map((p) => {
+            return (
+              <span className={s.activBtnPages} key={p.id}>
+                <button
+                  className={props.currentPage === p && s.buttonAktive}
+                  onClick={() => {
+                    props.onPageChanged(p);
+                  }}
+                >
+                  {p}
+                </button>
+              </span>
+            );
+          })}
+        {pagesPortionSize > portionNumber && (
+          <div className={s.chevronBoubleRight}>
+            <img
+              onClick={() => {
+                setPortionNumber(portionNumber + 1);
+              }}
+              src={chevronBoubleRight}
+              alt=""
+            />
+          </div>
+        )}
+      </div>
       <div className={s.loaderGif}>
         {props.bootResponse ? <img src={loadingGIF} alt="" /> : null}
       </div>

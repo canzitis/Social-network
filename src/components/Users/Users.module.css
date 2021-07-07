@@ -32,18 +32,24 @@
 }
 
 .activBtnPages button{
-  width: 40px;
-  height: 20px;
-  margin-right: 3px;
-  margin-bottom: 3px;
+    font-size: 12px;
+    border:none;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 3px;
+   
+ 
 }
 
 .buttonAktive{
   font-weight: 700;
   background-color: gold;
 }
+
 .activBtnPages button:hover{
   cursor: pointer;
+  font-size: 14px;
 }
 
 
@@ -59,3 +65,39 @@
   padding-top: 50px;
   padding-bottom: 120px;  /* закостылить исчезновение скрола */
 }
+
+.PagesBloc{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 40px 0px 40px;
+}
+
+
+.chevronBoubleLeft img{
+
+  padding-right: 3px;
+  width: 15px;
+  height: 15px;
+  margin-top: 9px;
+}
+
+.activBtnPages{
+  padding: 0px 5px 0px 5px;
+}
+
+.chevronBoubleRight img {
+  padding-left: 9px;
+  width: 10px;
+  height: 10px;
+  margin-top: 9px;
+}
+
+.chevronBoubleLeft img:hover{
+  cursor: pointer;
+}
+.chevronBoubleRight img:hover{
+  cursor: pointer;
+}
+
+

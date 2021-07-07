@@ -16,6 +16,7 @@ let initialState = {
   currentPage: 1,
   pageSize: 100,
   totalUsersCount: 0,
+  portionSize: 10,
   bootResponse: false,
   isFetching: false,
   followingProgress: []
