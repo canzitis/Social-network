@@ -28,17 +28,6 @@ class UsersAPIContainer extends React.Component {
   }
 }
 
-/* const mapStateToProps = (state) => {
-  return {
-    users: state.usersPage.users,
-    currentPage: state.usersPage.currentPage,
-    pageSize: state.usersPage.pageSize,
-    totalUsersCount: state.usersPage.totalUsersCount,
-    bootResponse: state.usersPage.bootResponse,
-    isFetching: state.usersPage.isFetching,
-    followingProgress: state.usersPage.followingProgress,
-  };
-}; */
 
 const mapStateToProps = (state) => {
   return {

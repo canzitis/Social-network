@@ -8,7 +8,6 @@ import chevronBoubleLeft from "../img/chevron-double-left.png";
 import chevronBoubleRight from "../img/chevron-double-right.png";
 
 const Users = (props) => {
-  debugger;
   const pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
   const pagesPortionSize = Math.ceil(pagesCount / props.portionSize);
   const [portionNumber, setPortionNumber] = useState(1);
@@ -18,6 +17,7 @@ const Users = (props) => {
   for (let i = 1; i <= pagesCount; i++) {
     pages.push(i);
   }
+  
   return (
     <div className={s.users}>
       <div className={s.PagesBloc}>

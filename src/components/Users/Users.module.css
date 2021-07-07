@@ -31,8 +31,7 @@
   margin-left: 5px;
 }
 
-.activBtnPages button{
-    font-size: 12px;
+.activBtnPages button{  
     border:none;
     background-color: white;
     width: 20px;
@@ -43,13 +42,13 @@
 }
 
 .buttonAktive{
+  font-size: 15px;
   font-weight: 700;
-  background-color: gold;
 }
 
 .activBtnPages button:hover{
   cursor: pointer;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 
