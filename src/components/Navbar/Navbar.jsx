@@ -25,6 +25,12 @@ const Navbar = () => {
           </NavLink>
         </div>
         <div className={s.itemNavLink}>
+          <img src={userListImg} alt="" />
+          <NavLink to="/users" activeClassName={s.activeLink}>
+            Users
+          </NavLink>
+        </div>
+        <div className={s.itemNavLink}>
           <img src={newsListNavlink} alt="" />
           <NavLink to="/news" activeClassName={s.activeLink}>
             News
@@ -40,12 +46,6 @@ const Navbar = () => {
           <img src={settingsListImg} alt="" />
           <NavLink to="/setings" activeClassName={s.activeLink}>
             Settings
-          </NavLink>
-        </div>
-        <div className={s.itemNavLink}>
-          <img src={userListImg} alt="" />
-          <NavLink to="/users" activeClassName={s.activeLink}>
-            Users
           </NavLink>
         </div>
       </div>
