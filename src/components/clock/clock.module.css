@@ -4,11 +4,26 @@
     padding-top: 10px;
 }
 
-@media(max-width:900px){
-   
-    
+@media(max-width:900px){   
     .clock{
-
      margin: 0 auto;
+    }
+}
+
+@media(max-width:767px){   
+    .clock{
+        margin-left: 100px;
+    }
+}
+
+@media(max-width:767px){   
+    .clock{
+        margin-left: 100px;
+    }
+}
+
+@media(max-width:450px){
+    .clock{
+        display: none;
     }
 }

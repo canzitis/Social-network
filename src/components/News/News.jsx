@@ -1,11 +1,9 @@
 import React from "react";
+import s from "./News.madule.css";
+import Engineeringworks from "../EngineeringWorks/Engineeringworks";
 
 const News = () => {
-  return (
-    <div>
-      
-    </div>
-  );
+  return <Engineeringworks />;
 };
 
 export default News;

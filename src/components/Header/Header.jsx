@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import s from "./Header.module.css";
-import logoComoany from "../img/logoCompany.png";
+import logoCompany from "../img/logoCompany.png";
 import searchImg from "../img/search.png";
 import profileIco from "../img/profile.png";
 import loginImg from "../img/log-in.png";
@@ -24,7 +24,7 @@ const Header = (props) => {
         <h5 className={s.helloImg}>
           New Social Network <img src={helloImg} alt="" />
         </h5>
-        <img className={s.logoCompany} src={logoComoany} alt="" />
+        <img className={s.logoCompany} src={logoCompany} alt="" />
 
         <div className={s.searchBloc}>
           <img className={s.searchImg} src={searchImg} alt="" />

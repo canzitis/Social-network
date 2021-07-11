@@ -7,8 +7,11 @@ import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import Footer from "./components/Footer/footer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import Login from "./components/Login/login";
+import Music from "./components/Music/Music";
 import Navbar from "./components/Navbar/Navbar";
+import News from "./components/News/News";
 import ProfileContainer from "./components/Profile/ProfileContainer";
+import Settings from "./components/Settings/Settings";
 import UsersContainer from "./components/Users/UsersContainer";
 import { initialize } from "./Redux/app-reducer";
 
@@ -32,6 +35,9 @@ class App extends React.Component {
               <Route path="/dialogs" render={() => <DialogsContainer />} />
               <Route path="/users" render={() => <UsersContainer />} />
               <Route path="/login" render={() => <Login />} />
+              <Route path="/news" render={() => <News />} />
+              <Route path="/music" render={() => <Music />} />
+              <Route path="/setings" render={() => <Settings />} />
             </div>
           </div>
         </div>

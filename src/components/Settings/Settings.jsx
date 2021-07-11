@@ -1,9 +1,10 @@
 import React from "react";
+import Engineeringworks from "../EngineeringWorks/Engineeringworks";
 
 const Settings = () => {
   return (
     <div>
-      <a href=".d">Settings</a>
+      <Engineeringworks />
     </div>
   );
 };

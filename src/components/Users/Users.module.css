@@ -3,7 +3,6 @@
   height: 20px;
   margin-bottom: 40px;
   margin-left:15px;
- 
 }
 
 .usersImg img{
@@ -37,8 +36,6 @@
     width: 20px;
     height: 20px;
     margin-bottom: 3px;
-   
- 
 }
 
 .buttonAktive{
@@ -74,7 +71,6 @@
 
 
 .chevronBoubleLeft img{
-
   padding-right: 3px;
   width: 15px;
   height: 15px;
@@ -95,8 +91,34 @@
 .chevronBoubleLeft img:hover{
   cursor: pointer;
 }
+
 .chevronBoubleRight img:hover{
   cursor: pointer;
 }
 
+@media(max-width:450px){
+  .btnFollowed  {
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .chevronBoubleLeft img{
+    padding-right: 3px;
+    width: 25px;
+    height: 25px;
+    margin-top: 9px;
+  }
+  .chevronBoubleRight img {
+    padding-left: 9px;
+    width: 15px;
+    height: 15px;
+    margin-top: 9px;
+  }
 
+  .activBtnPages{
+    padding: 0px 5px 0px 5px;
+    font-size: 20px;
+  }
+}

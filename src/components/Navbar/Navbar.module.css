@@ -39,3 +39,19 @@
   padding-left: 3px;
   font-weight: 700;
 }
+
+@media(max-width:767px){
+  .nav{
+    margin: 0 auto;
+    max-width:500px;
+    height: 220px;
+    padding: 5px 0px 0px 10px;
+  
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    
+  }
+
+
+}

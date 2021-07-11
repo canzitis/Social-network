@@ -16,10 +16,6 @@ padding: 10px 0px 10px 20px;
     padding-left: 70px;
 }
 
-
-
-
-
 .userImg img{
     border-radius: 50%;
     box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5)
@@ -49,8 +45,6 @@ padding: 10px 0px 10px 20px;
     margin-bottom: 10px;
     margin-top:  0px;
 }
-
-
 
 .baseImgUsers{
     width: 300px;
@@ -92,7 +86,6 @@ padding: 10px 0px 10px 20px;
     justify-content: space-between
 }
 
-
 .itemInformationBlocContact a{
   text-decoration: none;
   color: black;
@@ -109,24 +102,68 @@ padding: 10px 0px 10px 20px;
         padding: 10px;
     }
 
+
    .contencAB{
     display:block;
     width: 700px;
    } 
 }
 
-
-
 @media(max-width:900px){
     .content{
         width: 500px;
         display: block;
         padding: 5px;
+        margin: 0 auto;
+    }
+
+  
+    .contentA{
+        width: 500px;
+        display: block;
+        padding: 5px;   
+    }
+
+   .contencAB{
+    width: 450px;
+   } 
+
+   .itemInformationBlocContact{
+    margin-left: 0px; 
+    display: contents;
+    flex-direction: row; 
+    justify-content: space-between
+    }
+
+    .border{
+    display: none;
+    }
+}
+
+@media(max-width:600px){
+    .content{
+        width: 400px;
+        display: block;
+        padding: 1px;
+        text-align: center;
+    }
+
+    .contentB{
+        padding-left: 0px;
+        text-align: center;
+    }
+
+
+    .contentA{
+        width: 300px;
+        display: block;
+        padding: 0px;   
     }
 
    .contencAB{
     display:block;
-    width: 700px;
+    width: 300px;
+   
    } 
 
    .itemInformationBlocContact{
@@ -136,8 +173,66 @@ padding: 10px 0px 10px 20px;
     justify-content: space-between
 }
 
-.border{
+    .border{
     display: none;
 }
+}
 
+
+@media(max-width:450px){
+    .content{
+        width: 300px;
+        display: block;
+        padding: 1px;
+        text-align: center;
+    }
+
+    .contentB{
+        padding-left: 0px;
+        text-align: center;
+    }
+
+
+    .contentA{
+        width: 300px;
+        display: block;
+        padding: 0px;   
+    }
+
+   .contencAB{
+    display:block;
+    width: 300px;
+   
+   } 
+
+   .itemInformationBlocContact{
+    margin-left: 0px; 
+    display: contents;
+    flex-direction: row; 
+    justify-content: space-between
+    }
+
+    .border{
+    display: none;
+    }
+
+    .informationImg {
+        width: 21px;
+        height: 21px;
+        margin-top: 33px;
+        padding-right: 5px;
+    }
+
+    .information{
+        display: block;
+    
+        color: rgb(4, 0, 255);
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .information h5{
+        margin: 0;
+    }
 }
