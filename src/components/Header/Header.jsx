@@ -19,7 +19,7 @@ const Header = (props) => {
 
   return (
     <header className={s.header}>
-      <div className={s.headerInfo}>
+      <div className={s.headerContainer}>
         <h3>CatHub</h3>
         <h5 className={s.helloImg}>
           New Social Network <img src={helloImg} alt="" />

@@ -3,3 +3,12 @@
     font-size: 15px;
     padding-top: 10px;
 }
+
+@media(max-width:900px){
+   
+    
+    .clock{
+
+     margin: 0 auto;
+    }
+}

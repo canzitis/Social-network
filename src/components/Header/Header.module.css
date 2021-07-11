@@ -1,15 +1,25 @@
 .header{
+    margin: 0 auto;
+    width: 100%;
+    padding: 5px;
     margin-top: 10px;
-    height: 70px;
     grid-area: h;
+ }
+
+.headerContainer{
+   
+    height: 70px;
+
     border-radius: 25px;
     background-color: white;
- }
+   
+    padding: 5px 20px 5px 20px ;
+    display: flex;
+    justify-content: space-between;
+}
 
 .logoCompany{
     width: 60px;
-    padding-top: 5px;
-    padding-left: 20px;
 }
 
 
@@ -17,43 +27,42 @@
     color: black;
     position: absolute;
     margin-top: 0px;
-    padding-top: 5px;
-    padding-left: 90px;
+    padding-left: 70px;
     font-size: 25px;
     font-weight: 800;  
 }
+
 .helloImg img{
-    padding-top: 5px;
     width: 15px;
     height: 15px;
 }
+
 .header h5{
   position: absolute;
-  padding-top: 15px;
-  padding-left: 100px;
+  padding-top: 13px;
+  padding-left: 90px;
   font-weight: 400; 
 }
+
 .searchBloc{
-    padding-top: 25px;
-}
-.headerInfo{
-   display: flex;
-   justify-content: space-between;
+    width: 250px;
+    height: 25px;
+    padding-left: 100px;
+    padding-top: 20px;
 }
 
-  .searchInput{
+
+
+.searchInput{
   border-radius: 25px;
-    padding: 0;
-  width: 300px;
-  height: 25px;
-  }
+  width: 90%;
+}
 
-  .searchImg{
+.searchImg{
   width: 16px;
   height: 16px; 
-  padding-left: 150px;
   padding-right: 5px;
-  }
+}
 
 .login{
     float: right;
@@ -117,3 +126,38 @@
     outline: 0;
     outline-offset: 0;
 }
+
+
+/********************* MEDIA **********************/
+
+@media(max-width:1200px){
+
+    .headerContainer{
+      max-width: 900px;
+    }
+    .searchBloc{
+      max-width: 200px;
+    }
+
+    .searchImg{
+        display: none;
+    }
+  }
+  
+  @media(max-width:900px){
+    .headerContainer{
+      max-width: 500px;
+    }
+    .searchBloc{
+      display: none;
+    }
+    
+    .clock{
+      margin-left: 30px;
+    }
+
+
+    .searchImg{
+        display: none;
+    }
+  }

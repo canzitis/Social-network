@@ -1,12 +1,17 @@
-
-
-.content{
-  padding: 0 300px 0 300px;
+.site{
+  max-width: 1920px;
+  max-height: 100%;
   background-color: rgb(206, 206, 206);
 }
 
+.content{
+  max-width: 1900px; 
+  padding: 0px 200px 10px 200px;
+}
+
+
+
 .app-wrapper{
-   
   display: grid;
   grid-template-columns: 1fr 10fr;
 
@@ -15,24 +20,41 @@
   "n c"
   'f f';
 
-  grid-template-rows: 60px 1 fr;
-  
   grid-gap: 10px;
-
 }
 
 
 
 .app-wrapper-content{
-
   grid-area: c;
-
   border-radius: 25px;
-  
   background-color:white;
-
-  padding: 10px;
-
   margin-bottom: 20px;
+}
+
+/********* MEDIA **********/
+
+ @media(max-width:1200px){
+  .content{
+    max-width: 900px;
+    padding: 0px 50px 10px 50px;
+  }
+ }
+
+
+@media(max-width:992px){
+  .content{
+    max-width: 750px;
+    padding: 0px 40px 10px 40px;
+  }
+}
+
+@media(max-width:767px){
+  .content{
+    max-width : 200px;
+    margin: 0%;
+    max-width: none;
+    padding: 0px 10px 10px 10px;
+  }
 }
 
