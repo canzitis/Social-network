@@ -11,7 +11,7 @@ const Post = (props) => {
         alt=""
       />
       {props.message}
-      <div>
+      <div className={s.likesBloc}>
         <h5>
           <img className={s.likes} src={likesImg} alt="" />
           {props.likesCount}

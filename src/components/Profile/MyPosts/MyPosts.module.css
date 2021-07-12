@@ -38,16 +38,17 @@
 }
 
 .border{
-    margin-top: 50px;
+    margin-top: 40px;
     border: solid black 1px;
+    margin-bottom: 20px;
 }
 
 
 @media(max-width:450px){
-    .posts{
+    .posts{ 
         max-width: 300px;
-        border-top: solid 1px black;
-        margin-top: 30px;
+        border-top: solid 2px black;
+        margin-top: 100px;
     }
 
     .profileInput{
@@ -68,4 +69,5 @@
         margin-left: 0px;
         border-radius: 25px;
     }
+    
 }

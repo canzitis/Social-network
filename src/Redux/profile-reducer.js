@@ -80,7 +80,7 @@ export const setStatus = (status) => {
 export const getProfile = (id) => {
   return (dispatch) => {
     if (!id) {
-      id = 2;
+      id = 15641;
     }
     profileAPI.getProfile(id).then((data) => {
       dispatch(setProfile(data));

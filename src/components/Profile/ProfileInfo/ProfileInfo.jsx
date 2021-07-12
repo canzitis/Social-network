@@ -24,6 +24,7 @@ const ProfileInfo = (props) => {
               <img src={props.userProfile.photos.large} alt="" />
             )}
           </div>
+          {props.isOwer ? <input type="file" /> : null}
         </div>
         <div className={s.contentB}>
           <h4 className={s.fullName}>{props.userProfile.fullName}</h4>

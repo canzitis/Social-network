@@ -42,16 +42,47 @@
 
 @media(max-width:767px){
   .nav{
-    margin: 0 auto;
-    max-width:500px;
-    height: 220px;
-    padding: 5px 0px 0px 10px;
+    width: 100%;
+    height: 100px;
+    padding: 1px 0px 0px 0px;
   
     background-color: white;
     border-radius: 30px;
     margin-bottom: 10px;
-    
+    text-align: center;
   }
 
+  .item  {
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+  
+    color:black;
+  }
+
+  .itemNavLink{
+    padding: 0px 10px 8px 10px;
+  }
+
+  .itemBlocA{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .itemBlocB{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+  }
+
+  .item a.activeLink{
+    padding-left: 0px;
+    font-weight: 450;
+  }
+
+  .nav a:hover{
+    padding-left: 0px;
+  }
 
 }

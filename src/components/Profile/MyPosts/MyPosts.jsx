@@ -8,9 +8,14 @@ const MyPosts = React.memo((props) => {
     <Post message={p.message} likesCount={p.likesCount} id={p.id} key={p.id} />
   ));
   if (!props.isAuth) {
-    return <div></div>;
+    return (
+      <div className={s.posts}>
+        <h3>Posts:</h3>
+        <div>{postsElements}</div>
+        <div className={s.border}></div>
+      </div>
+    );
   }
-
   return (
     <div className={s.posts}>
       <h3>Posts:</h3>

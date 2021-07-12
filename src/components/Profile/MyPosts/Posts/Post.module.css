@@ -2,6 +2,7 @@
     border: solid black 1px;
     border-radius: 25px;
     margin-top: 9px;
+   
 }
 .avaPostUser{
     width: 90px;
@@ -56,5 +57,15 @@
        
         padding-right: 3px; 
     }
+
+    .likesBloc {
+        padding: 3px 15px 0px 0px;
+        text-align: right;
+    }
     
+    .item{
+        border: solid black 1px;
+        border-radius: 25px;
+        margin-top: 20px;  
+    }
 }

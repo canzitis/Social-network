@@ -16,8 +16,16 @@ class ProfileContainer extends React.Component {
     this.props.getStatus(id);
   }
 
+  componentDidUpdate(prevProps) {
+    let id = this.props.match.params.id;
+    if (this.id !== prevProps.match.params.id) {
+      this.props.getProfile(id);
+      this.props.getStatus(id);
+    }
+  }
+
   render() {
-    return <Profile {...this.props} />;
+    return <Profile {...this.props} isOwer={!this.props.match.params.id} />;
   }
 }
 

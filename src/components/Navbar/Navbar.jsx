@@ -12,41 +12,45 @@ const Navbar = () => {
   return (
     <nav className={s.nav}>
       <div className={s.item}>
-        <div className={s.itemNavLink}>
-          <img src={profileListImg} alt="" />
-          <NavLink to="/profile" activeClassName={s.activeLink}>
-            Profile
-          </NavLink>
+        <div className={s.itemBlocA}>
+          <div className={s.itemNavLink}>
+            <img src={profileListImg} alt="" />
+            <NavLink to="/profile" activeClassName={s.activeLink}>
+              Profile
+            </NavLink>
+          </div>
+          <div className={s.itemNavLink}>
+            <img src={messagesListImg} alt="" />
+            <NavLink to="/dialogs" activeClassName={s.activeLink}>
+              Messages
+            </NavLink>
+          </div>
+          <div className={s.itemNavLink}>
+            <img src={userListImg} alt="" />
+            <NavLink to="/users" activeClassName={s.activeLink}>
+              Users
+            </NavLink>
+          </div>
         </div>
-        <div className={s.itemNavLink}>
-          <img src={messagesListImg} alt="" />
-          <NavLink to="/dialogs" activeClassName={s.activeLink}>
-            Messages
-          </NavLink>
-        </div>
-        <div className={s.itemNavLink}>
-          <img src={userListImg} alt="" />
-          <NavLink to="/users" activeClassName={s.activeLink}>
-            Users
-          </NavLink>
-        </div>
-        <div className={s.itemNavLink}>
-          <img src={newsListNavlink} alt="" />
-          <NavLink to="/news" activeClassName={s.activeLink}>
-            News
-          </NavLink>
-        </div>
-        <div className={s.itemNavLink}>
-          <img src={musicListImg} alt="" />
-          <NavLink to="/music" activeClassName={s.activeLink}>
-            Music
-          </NavLink>
-        </div>
-        <div className={s.itemNavLink}>
-          <img src={settingsListImg} alt="" />
-          <NavLink to="/setings" activeClassName={s.activeLink}>
-            Settings
-          </NavLink>
+        <div className={s.itemBlocB}>
+          <div className={s.itemNavLink}>
+            <img src={newsListNavlink} alt="" />
+            <NavLink to="/news" activeClassName={s.activeLink}>
+              News
+            </NavLink>
+          </div>
+          <div className={s.itemNavLink}>
+            <img src={musicListImg} alt="" />
+            <NavLink to="/music" activeClassName={s.activeLink}>
+              Music
+            </NavLink>
+          </div>
+          <div className={s.itemNavLink}>
+            <img src={settingsListImg} alt="" />
+            <NavLink to="/setings" activeClassName={s.activeLink}>
+              Settings
+            </NavLink>
+          </div>
         </div>
       </div>
     </nav>
