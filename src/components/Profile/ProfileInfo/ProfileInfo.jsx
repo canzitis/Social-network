@@ -13,6 +13,13 @@ const ProfileInfo = (props) => {
   if (!props.userProfile) {
     return <Preloader />;
   }
+
+  const onMainPhotoSelected = (e) => {
+    if (e.target.files.length) {
+      props.loadingAvatar(e.target.files[0]);
+    }
+  };
+
   return (
     <div className={s.content}>
       <div className={s.contencAB}>
@@ -24,7 +31,13 @@ const ProfileInfo = (props) => {
               <img src={props.userProfile.photos.large} alt="" />
             )}
           </div>
-          {props.isOwer ? <input type="file" /> : null}
+          {props.isOwer && props.isAuth ? (
+            <div className={s.setAvatar}>
+              <p>change avatar:</p>
+              <img src="" alt=""></img>
+              <input type={"file"} onChange={onMainPhotoSelected} />
+            </div>
+          ) : null}
         </div>
         <div className={s.contentB}>
           <h4 className={s.fullName}>{props.userProfile.fullName}</h4>

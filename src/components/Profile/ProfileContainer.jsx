@@ -6,6 +6,7 @@ import {
   getProfile,
   getStatus,
   updateStatus,
+  loadingAvatar,
 } from "../../Redux/profile-reducer";
 import Profile from "./Profile";
 
@@ -38,6 +39,11 @@ const mapStateToProps = (state) => {
 };
 
 export default compose(
-  connect(mapStateToProps, { getProfile, getStatus, updateStatus }),
+  connect(mapStateToProps, {
+    getProfile,
+    getStatus,
+    updateStatus,
+    loadingAvatar,
+  }),
   withRouter
 )(ProfileContainer);

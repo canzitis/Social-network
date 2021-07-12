@@ -5,6 +5,7 @@ import {
 const ADD_POST = "ADD-POST";
 const SET_PROFILE = "SET-PROFILE";
 const SET_STATUS = "SET-STATUS";
+const SET_AVATAR = "SET-AVATAR";
 
 let initialState = {
   posts: [{
@@ -47,9 +48,17 @@ const profileReducer = (state = initialState, action) => {
           ...state,
           status: action.status
         }
+        case SET_AVATAR:
+          return {
+            ...state,
+            profile: {
+              ...state.profile,
+              photos: action.photos
+            }
+          }
 
-        default:
-          return state;
+          default:
+            return state;
   }
 };
 
@@ -77,6 +86,14 @@ export const setStatus = (status) => {
   };
 };
 
+export const setAvatar = (photos) => {
+  debugger;
+  return {
+    type: SET_AVATAR,
+    photos
+  };
+};
+
 export const getProfile = (id) => {
   return (dispatch) => {
     if (!id) {
@@ -100,6 +117,17 @@ export const updateStatus = (status) => {
     const response = await profileAPI.updateStatus(status)
     if (response.resultCode === 0) {
       dispatch(setStatus(status));
+    }
+
+  }
+}
+
+export const loadingAvatar = (file) => {
+  debugger;
+  return async (dispatch) => {
+    const response = await profileAPI.loadingAvatar(file)
+    if (response.resultCode === 0) {
+      dispatch(setAvatar(response.data.photos));
     }
 
   }
