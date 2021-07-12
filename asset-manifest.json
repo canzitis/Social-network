@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/react-site-practic/static/css/main.fcaee8b1.chunk.css",
-    "main.js": "/react-site-practic/static/js/main.8c57ba1b.chunk.js",
-    "main.js.map": "/react-site-practic/static/js/main.8c57ba1b.chunk.js.map",
-    "runtime-main.js": "/react-site-practic/static/js/runtime-main.5c60c467.js",
-    "runtime-main.js.map": "/react-site-practic/static/js/runtime-main.5c60c467.js.map",
-    "static/js/2.3ec67029.chunk.js": "/react-site-practic/static/js/2.3ec67029.chunk.js",
-    "static/js/2.3ec67029.chunk.js.map": "/react-site-practic/static/js/2.3ec67029.chunk.js.map",
-    "static/js/3.5f5f4af8.chunk.js": "/react-site-practic/static/js/3.5f5f4af8.chunk.js",
-    "static/js/3.5f5f4af8.chunk.js.map": "/react-site-practic/static/js/3.5f5f4af8.chunk.js.map",
+    "main.css": "/react-site-practic/static/css/main.d5e99dbf.chunk.css",
+    "main.js": "/react-site-practic/static/js/main.b0ec1522.chunk.js",
+    "main.js.map": "/react-site-practic/static/js/main.b0ec1522.chunk.js.map",
+    "runtime-main.js": "/react-site-practic/static/js/runtime-main.dcb0a57f.js",
+    "runtime-main.js.map": "/react-site-practic/static/js/runtime-main.dcb0a57f.js.map",
+    "static/js/2.5590f8fa.chunk.js": "/react-site-practic/static/js/2.5590f8fa.chunk.js",
+    "static/js/2.5590f8fa.chunk.js.map": "/react-site-practic/static/js/2.5590f8fa.chunk.js.map",
+    "static/js/3.27a0dd6f.chunk.js": "/react-site-practic/static/js/3.27a0dd6f.chunk.js",
+    "static/js/3.27a0dd6f.chunk.js.map": "/react-site-practic/static/js/3.27a0dd6f.chunk.js.map",
     "index.html": "/react-site-practic/index.html",
-    "static/css/main.fcaee8b1.chunk.css.map": "/react-site-practic/static/css/main.fcaee8b1.chunk.css.map",
-    "static/js/2.3ec67029.chunk.js.LICENSE.txt": "/react-site-practic/static/js/2.3ec67029.chunk.js.LICENSE.txt",
+    "static/css/main.d5e99dbf.chunk.css.map": "/react-site-practic/static/css/main.d5e99dbf.chunk.css.map",
+    "static/js/2.5590f8fa.chunk.js.LICENSE.txt": "/react-site-practic/static/js/2.5590f8fa.chunk.js.LICENSE.txt",
     "static/media/baseImgUsers.402e33f3.png": "/react-site-practic/static/media/baseImgUsers.402e33f3.png",
-    "static/media/loading-gif2.b9604ceb.gif": "/react-site-practic/static/media/loading-gif2.b9604ceb.gif"
+    "static/media/loading-gif2.b9604ceb.gif": "/react-site-practic/static/media/loading-gif2.b9604ceb.gif",
+    "static/media/Engineeringworks.module.css": "/react-site-practic/static/media/works-window.13b436ee.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5c60c467.js",
-    "static/js/2.3ec67029.chunk.js",
-    "static/css/main.fcaee8b1.chunk.css",
-    "static/js/main.8c57ba1b.chunk.js"
+    "static/js/runtime-main.dcb0a57f.js",
+    "static/js/2.5590f8fa.chunk.js",
+    "static/css/main.d5e99dbf.chunk.css",
+    "static/js/main.b0ec1522.chunk.js"
   ]
 }
