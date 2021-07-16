@@ -72,7 +72,6 @@ export const profileAPI = {
     },
 
     loadingAvatar(photoFile) {
-        debugger;
         const formData = new FormData();
         formData.append('image', photoFile)
         return instance.put(`profile/photo`, formData, {

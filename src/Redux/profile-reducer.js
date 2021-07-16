@@ -21,7 +21,8 @@ let initialState = {
   ],
   newPostsText: "Hello! ",
   userProfile: null,
-  status: ''
+  status: '',
+  loadingIsComplete: false,
 };
 
 const profileReducer = (state = initialState, action) => {
@@ -51,10 +52,11 @@ const profileReducer = (state = initialState, action) => {
         case SET_AVATAR:
           return {
             ...state,
-            profile: {
-              ...state.profile,
-              photos: action.photos
-            }
+            loadingIsComplete: true,
+              profile: {
+                ...state.profile,
+                photos: action.photos
+              }
           }
 
           default:
@@ -72,7 +74,6 @@ export const addPostActionCreator = (text) => {
 
 
 export const setProfile = (profile) => {
-
   return {
     type: SET_PROFILE,
     profile
@@ -87,10 +88,10 @@ export const setStatus = (status) => {
 };
 
 export const setAvatar = (photos) => {
-  debugger;
   return {
     type: SET_AVATAR,
-    photos
+    photos,
+
   };
 };
 
@@ -123,7 +124,6 @@ export const updateStatus = (status) => {
 }
 
 export const loadingAvatar = (file) => {
-  debugger;
   return async (dispatch) => {
     const response = await profileAPI.loadingAvatar(file)
     if (response.resultCode === 0) {

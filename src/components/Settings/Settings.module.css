@@ -1,0 +1,85 @@
+.accountSettings{
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.accountSettingsForm {
+    text-align: center;
+    margin: 0 auto;
+ 
+}
+
+.inputForm {
+    width: 300px;
+    height:20px;
+    border-radius:25px;
+}
+
+.inputCheckbox{
+    display: flex;
+    justify-content:center;
+    flex-direction: column
+}
+
+
+.accountSettings h2{
+    max-width:80%;
+
+    padding: 10px 0px 10px 0px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    border-bottom: solid 2px black;
+}
+
+.setAvatar{
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-bottom: solid 1px black;
+}
+
+.setAvatar img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding-bottom: 10px;   
+}
+
+.editData {
+    margin: 20px;
+    display: flex;
+    justify-content:center;
+}
+
+.editData button{
+    width: 100px;
+    height: 30px;
+    margin:20px 5px 20px 5px;
+    border-radius: 25px;
+}
+
+.editData button:hover{
+    cursor: pointer;
+}
+
+.likeImg{
+    display:flex;
+    justify-content:center;
+}
+
+.likeImg img{
+    margin: 3px 0px 0px 5px;
+    width:25px;
+    height:25px;
+}
+
+.buttonEditBlock{
+    border-bottom: solid black 1px;
+    margin-bottom:100px;
+}
+
+.accountSettingsForm{
+    border-radius: 25px;
+}
