@@ -81,6 +81,14 @@ export const profileAPI = {
         }).then(response => {
             return response.data
         })
+    },
+
+    loadingProfile(profileForm) {
+        return instance.put(`profile`,
+            profileForm
+        ).then(response => {
+            return response.data
+        })
     }
 }
 

@@ -7,7 +7,12 @@
 .accountSettingsForm {
     text-align: center;
     margin: 0 auto;
- 
+    border-radius: 25px;
+}
+
+.accountSettingsForm h4{
+    margin-top:15px;
+    margin-bottom: 0;
 }
 
 .inputForm {
@@ -17,11 +22,22 @@
 }
 
 .inputCheckbox{
+    padding-top: 20px;
     display: flex;
     justify-content:center;
-    flex-direction: column
+    flex-direction: row;
 }
 
+.inputCheckbox input{
+    width:15px;
+    height:15px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.inputCheckbox input:hover{
+    cursor: pointer;
+}
 
 .accountSettings h2{
     max-width:80%;
@@ -54,7 +70,7 @@
 }
 
 .editData button{
-    width: 100px;
+    width: 105px;
     height: 30px;
     margin:20px 5px 20px 5px;
     border-radius: 25px;
@@ -62,6 +78,7 @@
 
 .editData button:hover{
     cursor: pointer;
+    background-color: rgb(204, 236, 204);
 }
 
 .likeImg{
@@ -80,6 +97,21 @@
     margin-bottom:100px;
 }
 
-.accountSettingsForm{
+.accountSettingsForm button{
+    width: 100px;
+    height: 30px;
+    margin:20px 5px 20px 5px;
     border-radius: 25px;
+}
+
+
+.accountSettingsForm button:hover{
+    cursor: pointer;
+    background-color: rgb(204, 236, 204);
+}
+
+.accauntSettings{
+    color: rgb(138, 236, 207);
+    font-weight: 800;
+    font-size:25px;
 }

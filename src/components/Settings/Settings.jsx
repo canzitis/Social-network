@@ -12,8 +12,15 @@ const Settings = (props) => {
   }
   return (
     <div className={s.buttonEditBlock}>
-      <div >
-        {editMode ? <SettingsForm {...props} /> : <SettingsData {...props} />}
+      <div>
+        {editMode ? (
+          <SettingsForm
+            {...props}
+            saveProfile={props.saveProfile}
+          />
+        ) : (
+          <SettingsData {...props} />
+        )}
       </div>
       <div className={s.editData}>
         <button
@@ -21,14 +28,14 @@ const Settings = (props) => {
             setEditMode(true);
           }}
         >
-          Edit about me
+          Edit my details
         </button>
         <button
           onClick={() => {
             setEditMode(false);
           }}
         >
-          Save
+          Exit
         </button>
       </div>
     </div>

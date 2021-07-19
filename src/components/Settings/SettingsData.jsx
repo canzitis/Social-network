@@ -13,7 +13,7 @@ const SettingsData = (props) => {
 
   return (
     <div className={s.accountSettings}>
-      <h2>Account settings</h2>
+      <h2 className={s.accauntSettings}>Account settings</h2>
       <div>
         <p>Change Avatar:</p>
         <div className={s.setAvatar}>
@@ -26,6 +26,14 @@ const SettingsData = (props) => {
       </div>
       <div>
         <p>Edit information about me:</p>
+      </div>
+      <div>
+        <h4>Full Name:</h4>
+        <p>{props.userProfile.fullName}</p>
+      </div>
+      <div>
+        <h4>Web site:</h4>
+        <p>{props.userProfile.contacts.website}</p>
       </div>
       <div className={s.setaboutMe}>
         <h4>Instagram:</h4>
@@ -44,14 +52,14 @@ const SettingsData = (props) => {
         <p>{props.userProfile.contacts.vk}</p>
       </div>
       <div className={s.InformationBlocJob}>
-        <p className={s.likeImg}>
+        <h4 className={s.likeImg}>
           looking For A Job:
           {props.userProfile.lookingForAJob ? (
             <img src={likeImg} alt="" />
           ) : (
             <img src={dislikeImg} alt="" />
           )}
-        </p>
+        </h4>
         <h4>For A Job Description:</h4>
         <p>{props.userProfile.lookingForAJobDescription}</p>
       </div>
