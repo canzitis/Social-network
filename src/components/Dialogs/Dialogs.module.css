@@ -2,14 +2,9 @@
     display:flex;
 }
 
-.dialog{
-    padding-left: 20px;
-    border-left: solid black 1px;
-}
 
 .dialogName {
     margin-right: 30px;
-    
 }
 
 .dialogName a{ 
@@ -20,20 +15,12 @@
     color:black;
 }
 
-.dialogName:hover{
-    padding-left: 10px;
-
-}
 
 .messages{
     padding: 10px;
 }
 
-
-
-
 .dialogsItem a.activeLink{
-    font-weight: 700;
     color: rgb(128, 128, 128);
     padding-left: 10px;
 }
@@ -59,15 +46,40 @@
     margin-top: 30px;
 }
 
-.border{
-    width: 50%;
-    border-bottom: solid black 1px;
-    padding-top: 130px;
-   
-}
-
-
 .errorsText{
     color:red;
     font-size: 18px;
+}
+
+.dialogsItem{
+    border-right: solid black 1px;
+}
+@media(max-width:450px){
+
+    .dialogsItem a.activeLink{
+        color: rgb(128, 128, 128);
+    }
+    
+    
+    .messages{
+    width: 300px;
+    text-align:left;
+    }
+
+    .dialogName a{ 
+        text-decoration: none;
+        color:black;
+        font-size: 18px;
+    }
+    
+    .dialogInput input{
+        max-width:220px;
+    }
+
+    .buttonAddMessages{
+        margin: 10px 0 10px 120px;
+        border-radius: 25px;
+        width: 100px;
+        height: 25px;
+    }
 }

@@ -26,7 +26,7 @@
 .itemNavLink img{
   width: 16px;
   height: 15px;
-  padding-right: 10px;
+  padding-right: 7px;
 }
 
 .nav a:hover{
@@ -56,12 +56,13 @@
     margin-top: 20px;
     font-size: 20px;
     text-decoration: none;
-  
+    
     color:black;
   }
 
   .itemNavLink{
-    padding: 0px 10px 8px 10px;
+    padding: 0px 5px 8px 5px;
+
   }
 
   .itemBlocA{
@@ -83,6 +84,10 @@
 
   .nav a:hover{
     padding-left: 0px;
+  }
+
+  .item a.activeLink{
+    color: rgb(136, 136, 136);
   }
 
 }

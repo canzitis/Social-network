@@ -145,7 +145,7 @@ export const loadingAvatar = (file) => {
 };
 
 export const saveProfile = (profileForm) => {
-  return async (dispatch) => {
+  return async () => {
     const response = await profileAPI.loadingProfile(profileForm);
     if (response.resultCode === 0) {
       alert("Данные обновлены");

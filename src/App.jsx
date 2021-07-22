@@ -39,7 +39,7 @@ class App extends React.Component {
               <Route path="/music" render={() => <Music />} />
               <Route path="/setings" render={() => <SettingsContainer />} />
             </div>
-          </div>
+          </div>  
         </div>
         <Footer />
       </div>

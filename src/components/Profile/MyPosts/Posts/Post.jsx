@@ -10,7 +10,10 @@ const Post = (props) => {
         src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
         alt=""
       />
-      {props.message}
+      <div className={s.messages}>
+        <h5>{props.message}</h5>
+      </div>
+
       <div className={s.likesBloc}>
         <h5>
           <img className={s.likes} src={likesImg} alt="" />

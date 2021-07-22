@@ -33,9 +33,7 @@
 .activBtnPages button{  
     border:none;
     background-color: white;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 3px;
+    width: 100%;
 }
 
 .buttonAktive{
@@ -45,7 +43,6 @@
 
 .activBtnPages button:hover{
   cursor: pointer;
-  font-size: 15px;
 }
 
 
@@ -64,9 +61,7 @@
 
 .PagesBloc{
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  margin: 0px 40px 0px 40px;
 }
 
 
@@ -118,7 +113,6 @@
   }
 
   .activBtnPages{
-    padding: 0px 5px 0px 5px;
-    font-size: 20px;
+    padding: 5px 10px 0px 0px;
   }
 }

@@ -41,7 +41,7 @@ const LoginForm = (props) => {
             onBlur={handleBlur}
             value={values.email}
           />
-          {errors.email && touched.email && errors.email}
+          <div>{errors.email && touched.email && errors.email}</div>
           <div>
             <input
               placeholder="Password"
@@ -52,7 +52,7 @@ const LoginForm = (props) => {
               value={values.password}
             />
           </div>
-          {errors.password && touched.password && errors.password}
+          <div>{errors.password && touched.password && errors.password}</div>
           <button className={s.loginBtn} type="submit" disabled={isSubmitting}>
             Submit
           </button>

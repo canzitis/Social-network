@@ -11,7 +11,7 @@ const validateTextPost = (values) => {
 };
 
 const PostForm = (props) => {
-  const onAddPostValue = (value) => {
+  const onAddPostValue = (value, values) => {
     props.addPost(value.text);
   };
   return (

@@ -2,7 +2,6 @@
     border: solid black 1px;
     border-radius: 25px;
     margin-top: 9px;
-   
 }
 .avaPostUser{
     width: 90px;
@@ -47,6 +46,13 @@
     margin: 0px;
 }
 
+.messages {
+    width:300px;
+    max-height: 300px;
+}  
+
+
+
 @media(max-width:450px){
     .likes {
         width: 13px;
@@ -64,8 +70,19 @@
     }
     
     .item{
+        width: 300px;
         border: solid black 1px;
         border-radius: 25px;
         margin-top: 20px;  
+    }
+
+    .messages {
+        width:300px;
+        max-height: 300px;
+        word-wrap:break-word;
+    }   
+
+    .messages h5{
+        padding: 0 10px 0 10px;
     }
 }
