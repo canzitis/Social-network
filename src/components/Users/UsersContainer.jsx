@@ -28,7 +28,6 @@ class UsersAPIContainer extends React.Component {
   }
 }
 
-
 const mapStateToProps = (state) => {
   return {
     users: getUserPageReselect(state),

@@ -171,4 +171,44 @@
       padding: 10px 0px 10px 0px;
       grid-area: h;
    }
+  } 
+  
+  @media(max-width:320px){
+    .headerContainer{
+      padding: 10px 3px 0px 3px ;
+    }
+
+    .header{
+      margin: 0 auto;
+      max-width: 100%;
+      padding: 10px 0px 10px 0px;
+      grid-area: h;
+   }
+   .header h5{
+    display: none;
   }
+  }
+  
+  @media(max-width:240px){
+  
+    .header h3{
+      color: black;
+      position: absolute;
+      margin-top: 0px;
+      padding: 0 0 0 60px;
+      font-size: 15px;
+      font-weight: 800;  
+  }
+  
+
+    .header{
+      margin: 0 auto;
+      max-width: 100%;
+      padding: 10px 0px 10px 0px;
+      grid-area: h;
+   }
+   .header h5{
+    display: none;
+  }
+  }
+  

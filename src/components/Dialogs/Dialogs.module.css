@@ -55,11 +55,9 @@
     border-right: solid black 1px;
 }
 @media(max-width:450px){
-
     .dialogsItem a.activeLink{
         color: rgb(128, 128, 128);
     }
-    
     
     .messages{
     width: 300px;

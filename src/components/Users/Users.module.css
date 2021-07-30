@@ -2,16 +2,27 @@
   width: 70px;
   height: 20px;
   margin-bottom: 40px;
-  margin-left:15px;
+  margin: 0 auto;
+}
+
+.usersSearch{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 2em;
+  padding-bottom: 50px;
+}
+
+.usersItem{
+  text-align: center;
+ 
 }
 
 .usersImg img{
   border-radius: 50px;
+  box-shadow: 0 0 10px black;
 }
 
-.usersBorder{
-  border-bottom: solid 1px black;
-}
 .users img{
   width: 90px;
   height: 90px;
@@ -114,5 +125,52 @@
 
   .activBtnPages{
     padding: 5px 10px 0px 0px;
+  }
+
+  .usersSearch{
+    display:block;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 2em;
+    padding-bottom: 50px;
+  }
+}
+
+@media(max-width:250px){
+  .btnFollowed  {
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .chevronBoubleLeft img{
+    padding-right: 3px;
+    width: 25px;
+    height: 25px;
+    margin-top: 9px;
+  }
+  .chevronBoubleRight img {
+    padding-left: 9px;
+    width: 15px;
+    height: 15px;
+    margin-top: 9px;
+  }
+
+  .activBtnPages{
+    padding: 5px 10px 0px 0px;
+  }
+
+  .usersSearch{
+    display:block;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 2em;
+    padding-bottom: 50px;
+  }
+  .users h3{
+    word-break: break-all;
+    padding: 0px;
+    margin: 5px;
   }
 }
