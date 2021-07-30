@@ -102,6 +102,10 @@ padding: 10px 0px 10px 20px;
   font-size: 15px
 }
 
+
+
+/******************** MEDIA ******************/
+
 @media(max-width:1200px){
     .content{
         max-width: 700px;
@@ -178,20 +182,137 @@ padding: 10px 0px 10px 20px;
     display: contents;
     flex-direction: row; 
     justify-content: space-between
-}
+    }
 
     .border{
     display: none;
-}
+    }
 }
 
 
 @media(max-width:450px){
     .content{
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .contencAB{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    
+    .contentA{
+
+        padding:0;
+    }
+    
+    .contentB{
+        padding:0;
+        
+    }
+    
+    .userImg img{
+        margin: 30px 0 30px 0  ;
+        border-radius: 50%;
+        box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5)
+    }
+    
+    
+    .fullName{
+        font-size: 30px;
+    }
+    
+    .border{
+        padding: 0;
+        border: 1px solid black;
+        margin-bottom:20px
+    }
+    
+    .likeImg img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .content h4 {
+        margin:0px;
+    }
+    
+    .content p{
+        margin-bottom: 10px;
+        margin-top:  0px;
+    }
+    
+    .baseImgUsers{
         width: 300px;
+        height: 300px;
+    }
+    
+    .aboutMeBloc{
+        margin-top:50px;
+        margin-bottom: 30px;
+    }
+    
+    .aboutMeBloc img{
+        margin-top: 4px;
+        padding-right: 5px;
+        width: 21px;
+        height: 21px;
+    }
+    
+    .information{
+        display: flex;
+    
+        color: rgb(4, 0, 255);
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    
+    .informationImg {
+        width: 21px;
+        height: 21px;
+        margin-top: 33px;
+        padding-right: 5px;
+    }
+    
+    .itemInformationBlocContact{
+        margin-left: 20px; 
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between
+    }
+    
+    .itemInformationBlocContact a{
+      text-decoration: none;
+      color: black;
+    }
+    
+    .itemInformationBloc{
+        margin-top: 30px;
+    }
+    
+    .setAvatar {
+      text-align:center;
+      font-size: 15px
+    }
+}
+
+@media(max-width:340px){
+    .content{
+        width: 100%;
         display: block;
         padding: 1px;
         text-align: center;
+    }
+
+    .userImg img{
+        width: 250px;
+        height: 250px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5)
     }
 
     .contentB{
@@ -224,7 +345,73 @@ padding: 10px 0px 10px 20px;
     }
 
     .informationImg {
-        width: 21px;
+        width: 25px;
+        height: 21px;
+        margin-top: 33px;
+        padding-right: 5px;
+    }
+
+    .information{
+        display: block;
+    
+        color: rgb(4, 0, 255);
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .information h5{
+        margin: 0;
+    }
+}
+
+@media(max-width:240px){
+    .content{
+        width: 100%;
+        display: block;
+        padding: 1px;
+        text-align: center;
+    }
+
+    .userImg img{
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-radius: 50%;
+        box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5)
+    }
+
+    .contentB{
+        padding-left: 0px;
+        text-align: center;
+    }
+
+
+    .contentA{
+        width: 100%;
+        display: block;
+        padding: 0px;   
+    }
+
+   .contencAB{
+    display:block;
+    width: 100%;
+   } 
+
+   .itemInformationBlocContact{
+    margin-left: 0px; 
+    display: contents;
+    flex-direction: row; 
+    justify-content: space-between
+    }
+
+    .border{
+    display: none;
+    }
+
+    .informationImg {
+        width: 25px;
         height: 21px;
         margin-top: 33px;
         padding-right: 5px;
