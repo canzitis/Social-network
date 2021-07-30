@@ -88,6 +88,41 @@
     }
 }
 
+@media(max-width:340px){
+    .likes {
+        width: 13px;
+        height: 13px;
+    
+        border-radius: 0px;
+        margin-left: 0px;
+       
+        padding-right: 3px; 
+    }
+
+    .likesBloc {
+        padding: 3px 15px 0px 0px;
+        text-align: right;
+    }
+    
+    .item{
+        width: 90%;
+        border: solid black 1px;
+        border-radius: 25px;
+        margin: 0 auto;
+        margin-bottom: 20px; 
+    }
+
+    .messages {
+        width:300px;
+        max-height: 300px;
+        word-wrap:break-word;
+    }   
+
+    .messages h5{
+        padding: 0 10px 0 10px;
+    }
+}
+
 @media(max-width:240px){
     .item{
         text-align:center;

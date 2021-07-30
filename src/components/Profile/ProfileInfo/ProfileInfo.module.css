@@ -209,6 +209,7 @@ padding: 10px 0px 10px 20px;
     
     .contentB{
         padding:0;
+        text-align: center;
         
     }
     
@@ -262,12 +263,15 @@ padding: 10px 0px 10px 20px;
     
     .information{
         display: flex;
-    
+        justify-content:center;
+        flex-direction: row;
         color: rgb(4, 0, 255);
         font-weight: 500;
         font-size: 20px;
-        margin-top: 60px;
+        margin: 0 auto;
+        margin-top: 40px;
     }
+
     
     .informationImg {
         width: 21px;
@@ -280,15 +284,19 @@ padding: 10px 0px 10px 20px;
         margin-left: 20px; 
         display: flex;
         flex-direction: row; 
-        justify-content: space-between
+        justify-content: center;
     }
-    
+    .itemInformationBlocContact h4{
+        padding-right: 10px;
+    }
     .itemInformationBlocContact a{
+       
       text-decoration: none;
       color: black;
     }
     
     .itemInformationBloc{
+        text-align:center;
         margin-top: 30px;
     }
     
