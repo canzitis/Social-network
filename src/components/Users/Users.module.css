@@ -116,6 +116,12 @@
     height: 25px;
     margin-top: 9px;
   }
+
+  .usersImg {
+    width: 200px;
+    height: 200px;
+  }
+  
   .chevronBoubleRight img {
     padding-left: 9px;
     width: 15px;

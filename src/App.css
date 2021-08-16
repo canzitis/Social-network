@@ -2,12 +2,9 @@
   max-width: 1920px;
   max-height: 100%;
   background-color: rgb(206, 206, 206);
+  padding: 0 350px 0 350px;
 }
 
-.content{
-  max-width: 1900px; 
-  padding: 0px 200px 10px 200px;
-}
 
 
 
@@ -35,7 +32,7 @@
 /********* MEDIA **********/
 
  @media(max-width:1200px){
-  .content{
+  .site{
     max-width: 900px;
     padding: 0px 50px 10px 50px;
   }
@@ -43,17 +40,17 @@
 
 
 @media(max-width:992px){
-  .content{
+  .site{
     max-width: 750px;
     padding: 0px 40px 10px 40px;
   }
 }
 
 @media(max-width:767px){
-  .content{
+  .site{
     max-width : 500px;
     margin: 0%;
-    padding: 0px 10px 5px 10px;
+    padding: 0px;
     margin: 0 auto;
     text-align: center;
   }

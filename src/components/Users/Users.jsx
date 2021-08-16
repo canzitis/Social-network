@@ -67,7 +67,7 @@ const Users = (props) => {
       </div>
       <div className={s.usersSearch}>
         {props.users.map((u) => (
-          <div className={s.usersItem} key={u.id}>
+          <div className={s.usersItemDiv} key={u.id}>
             <NavLink className={s.usersImg} to={"/profile/" + u.id}>
               <img
                 src={u.photos.small ? u.photos.small : baseImgUsers}

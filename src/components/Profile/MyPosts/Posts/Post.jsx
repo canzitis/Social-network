@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import s from "./Post.module.css";
 import likesImg from "../../../img/likes.png";
 
