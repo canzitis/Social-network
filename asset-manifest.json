@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/react-site-practic/static/css/main.2d9e2c27.chunk.css",
-    "main.js": "/react-site-practic/static/js/main.264e0cf7.chunk.js",
-    "main.js.map": "/react-site-practic/static/js/main.264e0cf7.chunk.js.map",
-    "runtime-main.js": "/react-site-practic/static/js/runtime-main.9db1be37.js",
-    "runtime-main.js.map": "/react-site-practic/static/js/runtime-main.9db1be37.js.map",
-    "static/js/2.617dfb62.chunk.js": "/react-site-practic/static/js/2.617dfb62.chunk.js",
-    "static/js/2.617dfb62.chunk.js.map": "/react-site-practic/static/js/2.617dfb62.chunk.js.map",
-    "static/js/3.599a88d4.chunk.js": "/react-site-practic/static/js/3.599a88d4.chunk.js",
-    "static/js/3.599a88d4.chunk.js.map": "/react-site-practic/static/js/3.599a88d4.chunk.js.map",
-    "index.html": "/react-site-practic/index.html",
-    "static/css/main.2d9e2c27.chunk.css.map": "/react-site-practic/static/css/main.2d9e2c27.chunk.css.map",
-    "static/js/2.617dfb62.chunk.js.LICENSE.txt": "/react-site-practic/static/js/2.617dfb62.chunk.js.LICENSE.txt",
-    "static/media/baseImgUsers.402e33f3.png": "/react-site-practic/static/media/baseImgUsers.402e33f3.png",
-    "static/media/loading-gif2.b9604ceb.gif": "/react-site-practic/static/media/loading-gif2.b9604ceb.gif",
-    "static/media/Engineeringworks.module.css": "/react-site-practic/static/media/works-window-img.0ffccf83.jpg"
+    "main.css": "/Social-network/static/css/main.9873bd19.chunk.css",
+    "main.js": "/Social-network/static/js/main.264e0cf7.chunk.js",
+    "main.js.map": "/Social-network/static/js/main.264e0cf7.chunk.js.map",
+    "runtime-main.js": "/Social-network/static/js/runtime-main.881f4b17.js",
+    "runtime-main.js.map": "/Social-network/static/js/runtime-main.881f4b17.js.map",
+    "static/js/2.617dfb62.chunk.js": "/Social-network/static/js/2.617dfb62.chunk.js",
+    "static/js/2.617dfb62.chunk.js.map": "/Social-network/static/js/2.617dfb62.chunk.js.map",
+    "static/js/3.599a88d4.chunk.js": "/Social-network/static/js/3.599a88d4.chunk.js",
+    "static/js/3.599a88d4.chunk.js.map": "/Social-network/static/js/3.599a88d4.chunk.js.map",
+    "index.html": "/Social-network/index.html",
+    "static/css/main.9873bd19.chunk.css.map": "/Social-network/static/css/main.9873bd19.chunk.css.map",
+    "static/js/2.617dfb62.chunk.js.LICENSE.txt": "/Social-network/static/js/2.617dfb62.chunk.js.LICENSE.txt",
+    "static/media/baseImgUsers.402e33f3.png": "/Social-network/static/media/baseImgUsers.402e33f3.png",
+    "static/media/loading-gif2.b9604ceb.gif": "/Social-network/static/media/loading-gif2.b9604ceb.gif",
+    "static/media/Engineeringworks.module.css": "/Social-network/static/media/works-window-img.0ffccf83.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9db1be37.js",
+    "static/js/runtime-main.881f4b17.js",
     "static/js/2.617dfb62.chunk.js",
-    "static/css/main.2d9e2c27.chunk.css",
+    "static/css/main.9873bd19.chunk.css",
     "static/js/main.264e0cf7.chunk.js"
   ]
 }
