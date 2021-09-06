@@ -10,7 +10,7 @@ const Engineeringworks = () => {
   return (
     <div className={s.worksWindow}>
       <div className={s.worksInfo}>
-        <img src={logoComoany} alt="" />
+        <img className={s.logoCompany} src={logoComoany} alt="" />
         <h3>Ведутся технические работы</h3>
         <p>
           Наш сайт находится на техническом обслуживании и скоро будет доступен.

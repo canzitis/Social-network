@@ -49,7 +49,7 @@
      display: flex;
      flex-direction: row;
      justify-content: space-around;
-     text-align: left;
+     text-align: center;
  }
 
  .footerInfo h6{
@@ -119,7 +119,7 @@
          
          display: block;
          flex-direction: row;
-         justify-content: space-around;
+         justify-content: center;
          text-align: center;
      }
     

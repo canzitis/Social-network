@@ -111,6 +111,15 @@
         margin-bottom: 20px;
     }
     
+    .boxForm{
+        align-items:center;
+    }
+
+    .border{
+        width: 50%;
+        margin:  0 auto;
+        padding: 0;
+    }
 }
 
 

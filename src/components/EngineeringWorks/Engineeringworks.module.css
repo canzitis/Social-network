@@ -14,8 +14,11 @@
     border-radius: 25px;
 }
 
+.logoCompany{
+    margin-top: 50px;
+}
+
 .worksInfo{
-   padding-top: 80px; 
     color:white;
     text-align:center;
 }
