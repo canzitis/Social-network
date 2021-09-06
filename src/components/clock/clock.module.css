@@ -22,8 +22,11 @@
     }
 }
 
-@media(max-width:450px){
+
+@media(max-width:470px){
+
     .clock{
-        display: none;
+      display: none;
     }
-}
+     
+   }

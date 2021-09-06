@@ -26,22 +26,27 @@ class App extends React.Component {
     }
     return (
       <div className="site">
-        <div className="content">
-          <div className="app-wrapper">
-            <HeaderContainer />
-            <Navbar />
-            <div className="app-wrapper-content">
-              <Route path="/profile/:id?" render={() => <ProfileContainer />} />
-              <Route path="/dialogs" render={() => <DialogsContainer />} />
-              <Route path="/users" render={() => <UsersContainer />} />
-              <Route path="/login" render={() => <Login />} />
-              <Route path="/news" render={() => <News />} />
-              <Route path="/music" render={() => <Music />} />
-              <Route path="/setings" render={() => <SettingsContainer />} />
+        <div className="container">
+          <div className="content">
+            <div className="app-wrapper">
+              <HeaderContainer />
+              <Navbar />
+              <div className="app-wrapper-content">
+                <Route
+                  path="/profile/:id?"
+                  render={() => <ProfileContainer />}
+                />
+                <Route path="/dialogs" render={() => <DialogsContainer />} />
+                <Route path="/users" render={() => <UsersContainer />} />
+                <Route path="/login" render={() => <Login />} />
+                <Route path="/news" render={() => <News />} />
+                <Route path="/music" render={() => <Music />} />
+                <Route path="/setings" render={() => <SettingsContainer />} />
+              </div>
             </div>
-          </div>  
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     );
   }

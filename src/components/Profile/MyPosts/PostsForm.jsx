@@ -29,20 +29,22 @@ const PostForm = (props) => {
         handleSubmit,
       }) => (
         <form onSubmit={handleSubmit}>
-          <input
-            className={s.profileInput}
-            type="text"
-            name="text"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.text}
-            placeholder="write a post"
-          />
+          <div className={s.boxForm}>
+            <input
+              className={s.profileInput}
+              type="text"
+              name="text"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.text}
+              placeholder="write a post"
+            />
 
-          <div>
-            <button type="submit" className={s.buttonAddPost}>
-              Add Post
-            </button>
+            <div>
+              <button type="submit" className={s.buttonAddPost}>
+                Add Post
+              </button>
+            </div>
           </div>
           <div className={s.errorsText}>
             {errors.text && touched.text && errors.text}

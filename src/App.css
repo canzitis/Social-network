@@ -1,8 +1,12 @@
 .site{
-  max-width: 1920px;
+  margin:0;
   max-height: 100%;
   background-color: rgb(206, 206, 206);
-  padding: 0 350px 0 350px;
+}
+
+.container{
+  max-width: 1500px;
+  margin:  0 auto;
 }
 
 
@@ -31,27 +35,35 @@
 
 /********* MEDIA **********/
 
- @media(max-width:1200px){
-  .site{
+@media(max-width:1550px){
+  .container{
+    max-width: 1200px;
+  }
+}
+
+ @media(max-width:1250px){
+  .container{
     max-width: 900px;
-    padding: 0px 50px 10px 50px;
+  }
+ } 
+ 
+ @media(max-width:950px){
+  .container{
+    max-width: 700px;
   }
  }
 
 
 @media(max-width:992px){
-  .site{
+ /*  .site{
     max-width: 750px;
     padding: 0px 40px 10px 40px;
-  }
+  } */
 }
 
 @media(max-width:767px){
-  .site{
+  .container{
     max-width : 500px;
-    margin: 0%;
-    padding: 0px;
-    margin: 0 auto;
     text-align: center;
   }
 

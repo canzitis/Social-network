@@ -25,12 +25,17 @@ const Header = (props) => {
           New Social Network <img src={helloImg} alt="" />
         </h5>
         <img className={s.logoCompany} src={logoCompany} alt="" />
-
-        <div className={s.searchBloc}>
-          <img className={s.searchImg} src={searchImg} alt="" />
-          <input className={s.searchInput} type="search" placeholder="Search" />
+        <div className={s.boxSearchAndClock}>
+          <div className={s.searchBloc}>
+            <img className={s.searchImg} src={searchImg} alt="" />
+            <input
+              className={s.searchInput}
+              type="search"
+              placeholder="Search"
+            />
+          </div>
+          <Clock />
         </div>
-        <Clock />
         <div className={s.login}>
           {props.isAuth ? (
             <div className={s.loginInfoUser}>

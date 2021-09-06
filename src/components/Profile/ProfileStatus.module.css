@@ -1,3 +1,4 @@
+
 .statusBorder{
 margin-right:250px;
 margin-bottom: 20px;
@@ -40,6 +41,14 @@ margin-bottom: 20px;
     width: 15px;
     height: 15px;
     padding-right: 5px;
+}
+
+
+
+@media(max-width:1250px){
+    .statusBorder{
+        margin-right: 0;
+    }
 }
 
 @media(max-width:450px){
