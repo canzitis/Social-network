@@ -6,6 +6,7 @@ import baseImgUsers from "../img/baseImgUsers.png";
 import { useState } from "react";
 import chevronBoubleLeft from "../img/chevron-double-left.png";
 import chevronBoubleRight from "../img/chevron-double-right.png";
+import statusShowImg from "../img/status-show.png";
 
 const Users = (props) => {
   const pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
@@ -67,18 +68,33 @@ const Users = (props) => {
       </div>
       <div className={s.usersSearch}>
         {props.users.map((u) => (
-          <div className={s.usersItemDiv} key={u.id}>
+          <div key={u.id}>
             <NavLink className={s.usersImg} to={"/profile/" + u.id}>
               <img
+                className={s.usersAvatar}
                 src={u.photos.small ? u.photos.small : baseImgUsers}
                 alt=""
               />
             </NavLink>
             <h3>{u.name}</h3>
-            <h4>Статус: {u.status ? u.status : "-"}</h4>
+            <span>
+              Статус:
+              {u.status && u.status.length < 18 ? (
+                u.status
+              ) : u.status && u.status.length > 18 ? (
+                <div className={s.statusShow}>
+                  <span>показать статус</span>
+                  <button>
+                    <img src={statusShowImg} alt="" />
+                  </button>
+                </div>
+              ) : (
+                <span className={s.statusNone}> Статус отсуствует</span>
+              )}
+            </span>
             <div className={s.btnFollowed}>
               {u.followed ? (
-                <button
+                <button className={s.buttonUnFollow}
                   disabled={props.followingProgress.some((id) => id === u.id)}
                   onClick={() => {
                     props.unfollow(u.id);
@@ -87,7 +103,7 @@ const Users = (props) => {
                   Unfollow
                 </button>
               ) : (
-                <button
+                <button className={s.buttonFollow}
                   disabled={props.followingProgress.some((id) => id === u.id)}
                   onClick={() => {
                     props.follow(u.id);
