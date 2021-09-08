@@ -19,9 +19,13 @@
 }
 
 .usersSearch h3{
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 600;
   font-family: "../fonts/Glory-Italic-VariableFont_wght.ttf";
+}
+
+.statusUser{
+  color: rgb(40, 76, 233);
 }
 
 .buttonFollow {
@@ -213,6 +217,7 @@
     grid-template-columns:1fr;
   }
 
+ 
   .usersSearch >div{
     max-width: 100%;
   }

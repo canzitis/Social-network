@@ -134,12 +134,14 @@ export const toogleFollowingProgress = (isFetching, userId) => {
 export const getUsers = (currentPage, pageSize) => {
   return async (dispatch) => {
 
+
     dispatch(setBootResponse(true));
     dispatch(setCurrentPage(currentPage))
     dispatch(setUsers([
       /* ОЧИЩАЕМ ПОЛЬЗОВАТЕЛЕЙ ПОКА НЕ ЗАГРУЗИТСЯ ОТВЕТ С СЕРВА */
     ]));
     const data = await userAPI.getUsers(currentPage, pageSize);
+ 
     dispatch(setBootResponse(false));
     dispatch(setUsers(data.items));
     dispatch(setTotalUsersCount(data.totalCount));

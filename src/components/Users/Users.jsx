@@ -80,7 +80,7 @@ const Users = (props) => {
             <span>
               Статус:
               {u.status && u.status.length < 18 ? (
-                u.status
+                <span className={s.statusUser}> {u.status}</span>
               ) : u.status && u.status.length > 18 ? (
                 <div className={s.statusShow}>
                   <span>показать статус</span>
@@ -92,9 +92,13 @@ const Users = (props) => {
                 <span className={s.statusNone}> Статус отсуствует</span>
               )}
             </span>
+            <div>
+              
+            </div>
             <div className={s.btnFollowed}>
               {u.followed ? (
-                <button className={s.buttonUnFollow}
+                <button
+                  className={s.buttonUnFollow}
                   disabled={props.followingProgress.some((id) => id === u.id)}
                   onClick={() => {
                     props.unfollow(u.id);
@@ -103,7 +107,8 @@ const Users = (props) => {
                   Unfollow
                 </button>
               ) : (
-                <button className={s.buttonFollow}
+                <button
+                  className={s.buttonFollow}
                   disabled={props.followingProgress.some((id) => id === u.id)}
                   onClick={() => {
                     props.follow(u.id);
