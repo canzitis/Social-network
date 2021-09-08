@@ -20,11 +20,15 @@ const Header = (props) => {
   return (
     <header className={s.header}>
       <div className={s.headerContainer}>
-        <h3>CatHub</h3>
-        <h5 className={s.helloImg}>
-          New Social Network <img src={helloImg} alt="" />
-        </h5>
-        <img className={s.logoCompany} src={logoCompany} alt="" />
+        <div className={s.boxCompanyLogo}>
+          <img className={s.logoCompany} src={logoCompany} alt="" />
+          <div className={s.boxTextCompany}>
+            <h3>CatHub</h3>
+            <h5>
+              New Social Network <img src={helloImg} alt="" />
+            </h5>
+          </div>
+        </div>
         <div className={s.boxSearchAndClock}>
           <div className={s.searchBloc}>
             <img className={s.searchImg} src={searchImg} alt="" />

@@ -37,7 +37,7 @@ const DialogForm = (props) => {
             value={values.text}
           />
 
-          <div>
+          <div className={s.boxButtonAddMessages}>
             <button type="submit" className={s.buttonAddMessages}>
               Add Message
             </button>

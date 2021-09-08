@@ -31,7 +31,7 @@ class Clock extends React.Component {
     const hrs = d.getHours();
     const mins = d.getMinutes();
     const numberDey = d.getDay();
-    return `${days[numberDey]}, ${hrs}:${mins}`;
+    return `${days[numberDey]},${hrs}:${mins}`;
   }
   tick() {
     this.setState({
@@ -41,7 +41,7 @@ class Clock extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={s.boxClock}>
         <p className={s.clock}>{this.state.time}</p>
       </div>
     );

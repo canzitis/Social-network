@@ -65,6 +65,12 @@
     }
 }
 
+@media(max-width:600px){
+    .boxForm{
+        align-items: center;
+    }
+}
+
 @media(max-width:450px){
     .posts{ 
         width: 100%;

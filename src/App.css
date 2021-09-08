@@ -54,17 +54,10 @@
  }
 
 
-@media(max-width:992px){
- /*  .site{
-    max-width: 750px;
-    padding: 0px 40px 10px 40px;
-  } */
-}
 
 @media(max-width:767px){
   .container{
     max-width : 500px;
-    text-align: center;
   }
 
   .app-wrapper{

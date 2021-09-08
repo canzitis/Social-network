@@ -1,49 +1,52 @@
 .header{
-    margin: 0 auto;
     width: 100%;
     padding: 10px 0px 10px 0px;
     grid-area: h;
  }
 
 .headerContainer{
-    height: 70px;
     max-width: 100%;
     border-radius: 25px;
     background-color: white;
-   
-    padding: 5px 20px 5px 20px ;
+    align-items: center;
     display: flex;
+    padding: 0 10px 0 10px;
     justify-content: space-between;
 }
 
 .logoCompany{
-    width: 60px;
+    height: 70px;
+    margin-right: 10px;
 }
 
 
 .header h3{
     color: black;
-    position: absolute;
-    margin-top: 0px;
-    padding-left: 70px;
     font-size: 25px;
     font-weight: 800;  
 }
 
-.helloImg img{
-    width: 15px;
-    height: 15px;
+.boxCompanyLogo{
+  display: flex;
+  align-items:center
+}
+
+.boxCompanyLogo h3, h5{
+  margin: 0;
+}
+
+.boxTextCompany h5{
+  margin-left: 20px;
 }
 
 .header h5{
-  position: absolute;
-  padding-top: 13px;
-  padding-left: 90px;
+ 
   font-weight: 400; 
 }
 
 .searchBloc{
-    width: 100%;
+    display: flex;
+    align-items: center;
     height: 25px;
 }
 
@@ -51,7 +54,7 @@
 
 .searchInput{
   border-radius: 25px;
-  width: 90%;
+  width: 300px;
 }
 
 .searchImg{
@@ -128,21 +131,19 @@
   align-items: center;
 }
 
+.boxClock{
+  display: flex;
+
+}
+
 /********************* MEDIA **********************/
 
 @media(max-width:1200px){
 
     .searchBloc{
-      max-width: 200px;
+      max-width:100%;
     }
 
-    .searchImg{
-        display: none;
-    }
-
-    .boxSearchAndClock{
-      margin-left: 150px;
-    }
   }
   
   @media(max-width:900px){
@@ -156,10 +157,11 @@
       margin-left: 30px;
     }
 
-
-    .searchImg{
-        display: none;
+    .searchInput{
+      width: 200px;
     }
+
+    
   }
 
   @media(max-width:767px){
@@ -177,27 +179,14 @@
    .boxSearchAndClock{
      display: flex;
      flex-direction: column;
-     margin-left: 50px;
    }
   } 
-
-  @media(max-width:500px){
-
-    .searchInput{
-      max-width: 70%;
-    }
-    .boxSearchAndClock{
-      margin-left: 80px;
-    }
-    
-  } 
-  
-  
+ 
 
 
   @media(max-width:450px){
     .boxSearchAndClock{
-      margin-left: 80px;
+     display: none;
     }
   }
   
